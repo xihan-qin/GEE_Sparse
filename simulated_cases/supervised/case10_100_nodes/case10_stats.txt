@@ -1,0 +1,4 @@
+node_num: 100
+edg_num: 561
+class_num: 3
+test_ratio: 0.2
