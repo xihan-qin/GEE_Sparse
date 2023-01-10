@@ -24,7 +24,7 @@ np.seterr(divide='ignore', invalid='ignore')
 ############------------graph_encoder_embed_start----------------###############
 class GraphEncoderEmbed_sparse:
   def run(self, X, Y, n, **kwargs):
-    defaultKwargs = {'EdgeList': False, 'DiagA': True, 'Laplacian': False, 'Correlation': True}
+    defaultKwargs = {'EdgeList': False, 'DiagA': True, 'Laplacian': False, 'Correlation': True, "Weight": 0} # weight option: {0: 1/nk, 1 : nk/n, 2: one-hot}
     kwargs = { **defaultKwargs, **kwargs}
 
     X = X.copy()
@@ -42,7 +42,8 @@ class GraphEncoderEmbed_sparse:
     if kwargs['Laplacian']:
       X = self.Laplacian(X, n)
     
-    Z, W = self.Basic(X, Y, n)
+    w_flag = kwargs['Weight']
+    Z, W = self.Basic(X, Y, n, w_flag)
 
     if kwargs['Correlation']:
       Z = self.Correlation(Z)
@@ -52,7 +53,7 @@ class GraphEncoderEmbed_sparse:
     
     return Z, W, emb_time
 
-  def Basic(self, X, Y, n):
+  def Basic(self, X, Y, n, w_flag):
     """
       graph embedding basic function
       input X is sparse csr matrix of adjacency matrix
@@ -71,36 +72,39 @@ class GraphEncoderEmbed_sparse:
     # assign k to the max along the first column
     # Note for python, label Y starts from 0. Python index starts from 0. thus size k should be max + 1
     k = Y[:,0].max() + 1
-    
-    #nk: 1*n array, contains the number of observations in each class
-    nk = np.zeros((1,k))
-    for i in range(k):
-      nk[0,i] = np.count_nonzero(Y[:,0]==i)
 
-    ### original weights 
-    #W: sparse matrix for encoder marix. W[i,k] = {1/nk if Yi==k, otherwise 0}
-   
-    # W = sparse.dok_matrix((n, k), dtype=np.float32)
-
-    # for i in range(n):
-    #   k_i = Y[i,0]
-    #   if k_i >=0:
-    #     W[i,k_i] = 1/nk[0,k_i]
-    ### original weights 
-    
-    ### one-hot try
-    W = sparse.dok_matrix((n, k), dtype=np.float32)
-
-    for i in range(n):
-      k_i = Y[i,0]
-      if k_i >=0:
-        W[i,k_i] = 1
-    ### one-hot try
-    
-    W = sparse.csr_matrix(W)
-    Z = X.dot(W)
-    
+    W = self.get_W(Y, n, k, w_flag)
+    Z = X.dot(W)  
     return Z, W
+
+  def get_W(self, Y, n, k, w_flag):
+    # W: sparse matrix for encoder marix. 
+    W = sparse.dok_matrix((n, k), dtype=np.float32)
+    if w_flag == 2:
+      # one-hot
+      for i in range(n):
+        k_i = Y[i,0]
+        if k_i >=0:
+          W[i,k_i] = 1
+    else:
+      #nk: 1*n array, contains the number of observations in each class
+      nk = np.zeros((1,k))
+      for i in range(k):
+        nk[0,i] = np.count_nonzero(Y[:,0]==i)
+      if w_flag == 0:
+        #follow the paper: W[i,k] = {1/nk if Yi==k, otherwise 0}
+        for i in range(n):
+          k_i = Y[i,0]
+          if k_i >=0:
+            W[i,k_i] = 1/nk[0,k_i]
+
+      if w_flag == 1:
+        # use the nk/n for the weight
+        for i in range(n):
+          k_i = Y[i,0]
+          if k_i >=0:
+            W[i,k_i] = nk[0,k_i]/n    
+    return W
 
   def Diagonal(self, X, n):
     """

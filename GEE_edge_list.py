@@ -24,7 +24,7 @@ np.seterr(divide='ignore', invalid='ignore')
 ############------------graph_encoder_embed_start----------------###############
 class GraphEncoderEmbed_Edge:
   def run(self, X, Y, n, **kwargs):
-    defaultKwargs = {'DiagA': True, 'Laplacian': False, 'Correlation': True}
+    defaultKwargs = {'DiagA': True, 'Laplacian': False, 'Correlation': True, "Weight": 0} # weight option: {0: 1/nk, 1 : nk/n, 2: one-hot}
     kwargs = { **defaultKwargs, **kwargs}
 
     X = X.copy()
@@ -40,7 +40,8 @@ class GraphEncoderEmbed_Edge:
     if kwargs['Laplacian']:
       X = self.Laplacian(X, n)
     
-    Z, W = self.Basic(X, Y, n)
+    w_flag = kwargs['Weight']
+    Z, W = self.Basic(X, Y, n, w_flag)
 
     if kwargs['Correlation']:
       Z = self.Correlation(Z, n)
@@ -50,7 +51,7 @@ class GraphEncoderEmbed_Edge:
     
     return Z, W, emb_time
 
-  def Basic(self, X, Y, n):
+  def Basic(self, X, Y, n, w_flag):
     """
       graph embedding basic function
       input X is S3 edge list
@@ -59,23 +60,12 @@ class GraphEncoderEmbed_Edge:
       -- value >=0 indicate real label
       input n: number of vertices
     """
+    # assign k to the max along the first column
+    # Note for python, label Y starts from 0. Python index starts from 0. thus size k should be max + 1
     k = Y[:,0].max() + 1
 
-    Z = np.zeros((n,k))   
-    #nk: 1*n array, contains the number of observations in each class
-    #W: encoder marix. W[i,k] = {1/nk if Yi==k, otherwise 0}
-    nk = np.zeros((1,k))
-    W = np.zeros((n,k))
-
-    for i in range(k):
-      nk[0,i] = np.count_nonzero(Y[:,0]==i)
-
-    for i in range(Y.shape[0]):
-      k_i = Y[i,0]
-      if k_i >=0:
-        W[i,k_i] = 1/nk[0,k_i] ## GEE paper
-        # W[i,k_i] = nk[0,k_i]/n ## use as an example to show if people want to use nk/n instead of 1/nk
- 
+    W = self.get_W(Y, n, k, w_flag)
+    Z = np.zeros((n,k))    
     for row in X:
       [v_i, v_j, edg_i_j] = row
       v_i = int(v_i)
@@ -90,6 +80,37 @@ class GraphEncoderEmbed_Edge:
         Z[v_j, label_i] = Z[v_j, label_i] + W[v_i, label_i]*edg_i_j
 
     return Z, W
+
+  def get_W(self, Y, n, k, w_flag):
+    # W: sparse matrix for encoder marix. 
+    W = np.zeros((n,k))
+    if w_flag == 2:
+      # one-hot
+      for i in range(n):
+        k_i = Y[i,0]
+        if k_i >=0:
+          W[i,k_i] = 1
+    else:
+      #nk: 1*n array, contains the number of observations in each class
+      nk = np.zeros((1,k))
+      for i in range(k):
+        nk[0,i] = np.count_nonzero(Y[:,0]==i)
+
+      if w_flag == 0:
+        #follow the paper: W[i,k] = {1/nk if Yi==k, otherwise 0}
+        for i in range(n):
+          k_i = Y[i,0]
+          if k_i >=0:
+            W[i,k_i] = 1/nk[0,k_i]
+
+      if w_flag == 1:
+        # use the nk/n for the weight
+        for i in range(n):
+          k_i = Y[i,0]
+          if k_i >=0:
+            W[i,k_i] = nk[0,k_i]/n    
+    return W
+ 
 
   def Diagonal(self, X, n):
     # add self-loop to edg list -- add 1 connection for each (i,i)
