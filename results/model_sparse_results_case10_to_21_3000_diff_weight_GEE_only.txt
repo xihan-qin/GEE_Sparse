@@ -1,0 +1,1460 @@
+case10_100
+Laplacian = True, DiagA = True, Correlation = True, Weight = 0
+emb	0.015482187271118164s
+edg_num	561
+Laplacian = True, DiagA = True, Correlation = True, Weight = 1
+emb	0.003042936325073242s
+edg_num	561
+Laplacian = True, DiagA = True, Correlation = True, Weight = 2
+emb	0.002872943878173828s
+edg_num	561
+Laplacian = True, DiagA = True, Correlation = False, Weight = 0
+emb	0.0022678375244140625s
+edg_num	561
+Laplacian = True, DiagA = True, Correlation = False, Weight = 1
+emb	0.0032548904418945312s
+edg_num	561
+Laplacian = True, DiagA = True, Correlation = False, Weight = 2
+emb	0.002480745315551758s
+edg_num	561
+Laplacian = True, DiagA = False, Correlation = True, Weight = 0
+emb	0.006148815155029297s
+edg_num	561
+Laplacian = True, DiagA = False, Correlation = True, Weight = 1
+emb	0.004422903060913086s
+edg_num	561
+Laplacian = True, DiagA = False, Correlation = True, Weight = 2
+emb	0.0032761096954345703s
+edg_num	561
+Laplacian = True, DiagA = False, Correlation = False, Weight = 0
+emb	0.002244710922241211s
+edg_num	561
+Laplacian = True, DiagA = False, Correlation = False, Weight = 1
+emb	0.002115964889526367s
+edg_num	561
+Laplacian = True, DiagA = False, Correlation = False, Weight = 2
+emb	0.0022308826446533203s
+edg_num	561
+Laplacian = False, DiagA = True, Correlation = True, Weight = 0
+emb	0.002171039581298828s
+edg_num	561
+Laplacian = False, DiagA = True, Correlation = True, Weight = 1
+emb	0.0023648738861083984s
+edg_num	561
+Laplacian = False, DiagA = True, Correlation = True, Weight = 2
+emb	0.002271890640258789s
+edg_num	561
+Laplacian = False, DiagA = True, Correlation = False, Weight = 0
+emb	0.0020170211791992188s
+edg_num	561
+Laplacian = False, DiagA = True, Correlation = False, Weight = 1
+emb	0.002524852752685547s
+edg_num	561
+Laplacian = False, DiagA = True, Correlation = False, Weight = 2
+emb	0.0017168521881103516s
+edg_num	561
+Laplacian = False, DiagA = False, Correlation = True, Weight = 0
+emb	0.0020089149475097656s
+edg_num	561
+Laplacian = False, DiagA = False, Correlation = True, Weight = 1
+emb	0.003186941146850586s
+edg_num	561
+Laplacian = False, DiagA = False, Correlation = True, Weight = 2
+emb	0.0019180774688720703s
+edg_num	561
+Laplacian = False, DiagA = False, Correlation = False, Weight = 0
+emb	0.001257181167602539s
+edg_num	561
+Laplacian = False, DiagA = False, Correlation = False, Weight = 1
+emb	0.0019207000732421875s
+edg_num	561
+Laplacian = False, DiagA = False, Correlation = False, Weight = 2
+emb	0.0022630691528320312s
+edg_num	561
+case11_100
+Laplacian = True, DiagA = True, Correlation = True, Weight = 0
+emb	0.004409074783325195s
+edg_num	609
+Laplacian = True, DiagA = True, Correlation = True, Weight = 1
+emb	0.0034248828887939453s
+edg_num	609
+Laplacian = True, DiagA = True, Correlation = True, Weight = 2
+emb	0.0038840770721435547s
+edg_num	609
+Laplacian = True, DiagA = True, Correlation = False, Weight = 0
+emb	0.0024030208587646484s
+edg_num	609
+Laplacian = True, DiagA = True, Correlation = False, Weight = 1
+emb	0.0024340152740478516s
+edg_num	609
+Laplacian = True, DiagA = True, Correlation = False, Weight = 2
+emb	0.002853870391845703s
+edg_num	609
+Laplacian = True, DiagA = False, Correlation = True, Weight = 0
+emb	0.003242969512939453s
+edg_num	609
+Laplacian = True, DiagA = False, Correlation = True, Weight = 1
+emb	0.004827022552490234s
+edg_num	609
+Laplacian = True, DiagA = False, Correlation = True, Weight = 2
+emb	0.0037698745727539062s
+edg_num	609
+Laplacian = True, DiagA = False, Correlation = False, Weight = 0
+emb	0.0019550323486328125s
+edg_num	609
+Laplacian = True, DiagA = False, Correlation = False, Weight = 1
+emb	0.0020008087158203125s
+edg_num	609
+Laplacian = True, DiagA = False, Correlation = False, Weight = 2
+emb	0.0021212100982666016s
+edg_num	609
+Laplacian = False, DiagA = True, Correlation = True, Weight = 0
+emb	0.0022537708282470703s
+edg_num	609
+Laplacian = False, DiagA = True, Correlation = True, Weight = 1
+emb	0.0030100345611572266s
+edg_num	609
+Laplacian = False, DiagA = True, Correlation = True, Weight = 2
+emb	0.0022149085998535156s
+edg_num	609
+Laplacian = False, DiagA = True, Correlation = False, Weight = 0
+emb	0.0018298625946044922s
+edg_num	609
+Laplacian = False, DiagA = True, Correlation = False, Weight = 1
+emb	0.002052783966064453s
+edg_num	609
+Laplacian = False, DiagA = True, Correlation = False, Weight = 2
+emb	0.001909017562866211s
+edg_num	609
+Laplacian = False, DiagA = False, Correlation = True, Weight = 0
+emb	0.0027282238006591797s
+edg_num	609
+Laplacian = False, DiagA = False, Correlation = True, Weight = 1
+emb	0.002856016159057617s
+edg_num	609
+Laplacian = False, DiagA = False, Correlation = True, Weight = 2
+emb	0.0020301342010498047s
+edg_num	609
+Laplacian = False, DiagA = False, Correlation = False, Weight = 0
+emb	0.0014958381652832031s
+edg_num	609
+Laplacian = False, DiagA = False, Correlation = False, Weight = 1
+emb	0.0012290477752685547s
+edg_num	609
+Laplacian = False, DiagA = False, Correlation = False, Weight = 2
+emb	0.0011420249938964844s
+edg_num	609
+case20_100
+Laplacian = True, DiagA = True, Correlation = True, Weight = 0
+emb	0.004079103469848633s
+edg_num	48
+Laplacian = True, DiagA = True, Correlation = True, Weight = 1
+emb	0.0030999183654785156s
+edg_num	48
+Laplacian = True, DiagA = True, Correlation = True, Weight = 2
+emb	0.002615213394165039s
+edg_num	48
+Laplacian = True, DiagA = True, Correlation = False, Weight = 0
+emb	0.002466917037963867s
+edg_num	48
+Laplacian = True, DiagA = True, Correlation = False, Weight = 1
+emb	0.0024001598358154297s
+edg_num	48
+Laplacian = True, DiagA = True, Correlation = False, Weight = 2
+emb	0.002929210662841797s
+edg_num	48
+Laplacian = True, DiagA = False, Correlation = True, Weight = 0
+emb	0.0026988983154296875s
+edg_num	48
+Laplacian = True, DiagA = False, Correlation = True, Weight = 1
+emb	0.002986907958984375s
+edg_num	48
+Laplacian = True, DiagA = False, Correlation = True, Weight = 2
+emb	0.002966165542602539s
+edg_num	48
+Laplacian = True, DiagA = False, Correlation = False, Weight = 0
+emb	0.0020542144775390625s
+edg_num	48
+Laplacian = True, DiagA = False, Correlation = False, Weight = 1
+emb	0.002089977264404297s
+edg_num	48
+Laplacian = True, DiagA = False, Correlation = False, Weight = 2
+emb	0.0020830631256103516s
+edg_num	48
+Laplacian = False, DiagA = True, Correlation = True, Weight = 0
+emb	0.0024497509002685547s
+edg_num	48
+Laplacian = False, DiagA = True, Correlation = True, Weight = 1
+emb	0.002417325973510742s
+edg_num	48
+Laplacian = False, DiagA = True, Correlation = True, Weight = 2
+emb	0.0024700164794921875s
+edg_num	48
+Laplacian = False, DiagA = True, Correlation = False, Weight = 0
+emb	0.002360105514526367s
+edg_num	48
+Laplacian = False, DiagA = True, Correlation = False, Weight = 1
+emb	0.0020170211791992188s
+edg_num	48
+Laplacian = False, DiagA = True, Correlation = False, Weight = 2
+emb	0.0015070438385009766s
+edg_num	48
+Laplacian = False, DiagA = False, Correlation = True, Weight = 0
+emb	0.0018579959869384766s
+edg_num	48
+Laplacian = False, DiagA = False, Correlation = True, Weight = 1
+emb	0.0019309520721435547s
+edg_num	48
+Laplacian = False, DiagA = False, Correlation = True, Weight = 2
+emb	0.0018231868743896484s
+edg_num	48
+Laplacian = False, DiagA = False, Correlation = False, Weight = 0
+emb	0.0012359619140625s
+edg_num	48
+Laplacian = False, DiagA = False, Correlation = False, Weight = 1
+emb	0.00128173828125s
+edg_num	48
+Laplacian = False, DiagA = False, Correlation = False, Weight = 2
+emb	0.0012769699096679688s
+edg_num	48
+case21_100
+Laplacian = True, DiagA = True, Correlation = True, Weight = 0
+emb	0.0032341480255126953s
+edg_num	41
+Laplacian = True, DiagA = True, Correlation = True, Weight = 1
+emb	0.004353046417236328s
+edg_num	41
+Laplacian = True, DiagA = True, Correlation = True, Weight = 2
+emb	0.004019021987915039s
+edg_num	41
+Laplacian = True, DiagA = True, Correlation = False, Weight = 0
+emb	0.002515077590942383s
+edg_num	41
+Laplacian = True, DiagA = True, Correlation = False, Weight = 1
+emb	0.0022079944610595703s
+edg_num	41
+Laplacian = True, DiagA = True, Correlation = False, Weight = 2
+emb	0.0024611949920654297s
+edg_num	41
+Laplacian = True, DiagA = False, Correlation = True, Weight = 0
+emb	0.0027370452880859375s
+edg_num	41
+Laplacian = True, DiagA = False, Correlation = True, Weight = 1
+emb	0.0035037994384765625s
+edg_num	41
+Laplacian = True, DiagA = False, Correlation = True, Weight = 2
+emb	0.0024650096893310547s
+edg_num	41
+Laplacian = True, DiagA = False, Correlation = False, Weight = 0
+emb	0.0019261837005615234s
+edg_num	41
+Laplacian = True, DiagA = False, Correlation = False, Weight = 1
+emb	0.0019588470458984375s
+edg_num	41
+Laplacian = True, DiagA = False, Correlation = False, Weight = 2
+emb	0.002613067626953125s
+edg_num	41
+Laplacian = False, DiagA = True, Correlation = True, Weight = 0
+emb	0.0028798580169677734s
+edg_num	41
+Laplacian = False, DiagA = True, Correlation = True, Weight = 1
+emb	0.0019960403442382812s
+edg_num	41
+Laplacian = False, DiagA = True, Correlation = True, Weight = 2
+emb	0.0022699832916259766s
+edg_num	41
+Laplacian = False, DiagA = True, Correlation = False, Weight = 0
+emb	0.0014472007751464844s
+edg_num	41
+Laplacian = False, DiagA = True, Correlation = False, Weight = 1
+emb	0.0016949176788330078s
+edg_num	41
+Laplacian = False, DiagA = True, Correlation = False, Weight = 2
+emb	0.0022208690643310547s
+edg_num	41
+Laplacian = False, DiagA = False, Correlation = True, Weight = 0
+emb	0.002443075180053711s
+edg_num	41
+Laplacian = False, DiagA = False, Correlation = True, Weight = 1
+emb	0.001987934112548828s
+edg_num	41
+Laplacian = False, DiagA = False, Correlation = True, Weight = 2
+emb	0.0016357898712158203s
+edg_num	41
+Laplacian = False, DiagA = False, Correlation = False, Weight = 0
+emb	0.001338958740234375s
+edg_num	41
+Laplacian = False, DiagA = False, Correlation = False, Weight = 1
+emb	0.0011510848999023438s
+edg_num	41
+Laplacian = False, DiagA = False, Correlation = False, Weight = 2
+emb	0.0013241767883300781s
+edg_num	41
+case10_1000
+Laplacian = True, DiagA = True, Correlation = True, Weight = 0
+emb	0.01926112174987793s
+edg_num	55913
+Laplacian = True, DiagA = True, Correlation = True, Weight = 1
+emb	0.019443750381469727s
+edg_num	55913
+Laplacian = True, DiagA = True, Correlation = True, Weight = 2
+emb	0.01782703399658203s
+edg_num	55913
+Laplacian = True, DiagA = True, Correlation = False, Weight = 0
+emb	0.020212888717651367s
+edg_num	55913
+Laplacian = True, DiagA = True, Correlation = False, Weight = 1
+emb	0.028748035430908203s
+edg_num	55913
+Laplacian = True, DiagA = True, Correlation = False, Weight = 2
+emb	0.020550966262817383s
+edg_num	55913
+Laplacian = True, DiagA = False, Correlation = True, Weight = 0
+emb	0.01641392707824707s
+edg_num	55913
+Laplacian = True, DiagA = False, Correlation = True, Weight = 1
+emb	0.01677417755126953s
+edg_num	55913
+Laplacian = True, DiagA = False, Correlation = True, Weight = 2
+emb	0.014719009399414062s
+edg_num	55913
+Laplacian = True, DiagA = False, Correlation = False, Weight = 0
+emb	0.016255855560302734s
+edg_num	55913
+Laplacian = True, DiagA = False, Correlation = False, Weight = 1
+emb	0.013936042785644531s
+edg_num	55913
+Laplacian = True, DiagA = False, Correlation = False, Weight = 2
+emb	0.014574050903320312s
+edg_num	55913
+Laplacian = False, DiagA = True, Correlation = True, Weight = 0
+emb	0.014387845993041992s
+edg_num	55913
+Laplacian = False, DiagA = True, Correlation = True, Weight = 1
+emb	0.013738155364990234s
+edg_num	55913
+Laplacian = False, DiagA = True, Correlation = True, Weight = 2
+emb	0.015835046768188477s
+edg_num	55913
+Laplacian = False, DiagA = True, Correlation = False, Weight = 0
+emb	0.014722108840942383s
+edg_num	55913
+Laplacian = False, DiagA = True, Correlation = False, Weight = 1
+emb	0.01329493522644043s
+edg_num	55913
+Laplacian = False, DiagA = True, Correlation = False, Weight = 2
+emb	0.013609886169433594s
+edg_num	55913
+Laplacian = False, DiagA = False, Correlation = True, Weight = 0
+emb	0.013242959976196289s
+edg_num	55913
+Laplacian = False, DiagA = False, Correlation = True, Weight = 1
+emb	0.013720989227294922s
+edg_num	55913
+Laplacian = False, DiagA = False, Correlation = True, Weight = 2
+emb	0.011767148971557617s
+edg_num	55913
+Laplacian = False, DiagA = False, Correlation = False, Weight = 0
+emb	0.015820741653442383s
+edg_num	55913
+Laplacian = False, DiagA = False, Correlation = False, Weight = 1
+emb	0.01129293441772461s
+edg_num	55913
+Laplacian = False, DiagA = False, Correlation = False, Weight = 2
+emb	0.011132001876831055s
+edg_num	55913
+case11_1000
+Laplacian = True, DiagA = True, Correlation = True, Weight = 0
+emb	0.019527912139892578s
+edg_num	60500
+Laplacian = True, DiagA = True, Correlation = True, Weight = 1
+emb	0.018751859664916992s
+edg_num	60500
+Laplacian = True, DiagA = True, Correlation = True, Weight = 2
+emb	0.01958918571472168s
+edg_num	60500
+Laplacian = True, DiagA = True, Correlation = False, Weight = 0
+emb	0.023179054260253906s
+edg_num	60500
+Laplacian = True, DiagA = True, Correlation = False, Weight = 1
+emb	0.016771793365478516s
+edg_num	60500
+Laplacian = True, DiagA = True, Correlation = False, Weight = 2
+emb	0.017351865768432617s
+edg_num	60500
+Laplacian = True, DiagA = False, Correlation = True, Weight = 0
+emb	0.015623092651367188s
+edg_num	60500
+Laplacian = True, DiagA = False, Correlation = True, Weight = 1
+emb	0.016031980514526367s
+edg_num	60500
+Laplacian = True, DiagA = False, Correlation = True, Weight = 2
+emb	0.01768779754638672s
+edg_num	60500
+Laplacian = True, DiagA = False, Correlation = False, Weight = 0
+emb	0.017008066177368164s
+edg_num	60500
+Laplacian = True, DiagA = False, Correlation = False, Weight = 1
+emb	0.02218174934387207s
+edg_num	60500
+Laplacian = True, DiagA = False, Correlation = False, Weight = 2
+emb	0.01592421531677246s
+edg_num	60500
+Laplacian = False, DiagA = True, Correlation = True, Weight = 0
+emb	0.014611005783081055s
+edg_num	60500
+Laplacian = False, DiagA = True, Correlation = True, Weight = 1
+emb	0.015526294708251953s
+edg_num	60500
+Laplacian = False, DiagA = True, Correlation = True, Weight = 2
+emb	0.015048742294311523s
+edg_num	60500
+Laplacian = False, DiagA = True, Correlation = False, Weight = 0
+emb	0.01346278190612793s
+edg_num	60500
+Laplacian = False, DiagA = True, Correlation = False, Weight = 1
+emb	0.015468120574951172s
+edg_num	60500
+Laplacian = False, DiagA = True, Correlation = False, Weight = 2
+emb	0.013629913330078125s
+edg_num	60500
+Laplacian = False, DiagA = False, Correlation = True, Weight = 0
+emb	0.012694835662841797s
+edg_num	60500
+Laplacian = False, DiagA = False, Correlation = True, Weight = 1
+emb	0.011436223983764648s
+edg_num	60500
+Laplacian = False, DiagA = False, Correlation = True, Weight = 2
+emb	0.013428449630737305s
+edg_num	60500
+Laplacian = False, DiagA = False, Correlation = False, Weight = 0
+emb	0.011758089065551758s
+edg_num	60500
+Laplacian = False, DiagA = False, Correlation = False, Weight = 1
+emb	0.013617753982543945s
+edg_num	60500
+Laplacian = False, DiagA = False, Correlation = False, Weight = 2
+emb	0.012959003448486328s
+edg_num	60500
+case20_1000
+Laplacian = True, DiagA = True, Correlation = True, Weight = 0
+emb	0.015504121780395508s
+edg_num	4185
+Laplacian = True, DiagA = True, Correlation = True, Weight = 1
+emb	0.02149224281311035s
+edg_num	4185
+Laplacian = True, DiagA = True, Correlation = True, Weight = 2
+emb	0.015469074249267578s
+edg_num	4185
+Laplacian = True, DiagA = True, Correlation = False, Weight = 0
+emb	0.013785123825073242s
+edg_num	4185
+Laplacian = True, DiagA = True, Correlation = False, Weight = 1
+emb	0.014490127563476562s
+edg_num	4185
+Laplacian = True, DiagA = True, Correlation = False, Weight = 2
+emb	0.017667770385742188s
+edg_num	4185
+Laplacian = True, DiagA = False, Correlation = True, Weight = 0
+emb	0.012593984603881836s
+edg_num	4185
+Laplacian = True, DiagA = False, Correlation = True, Weight = 1
+emb	0.013446807861328125s
+edg_num	4185
+Laplacian = True, DiagA = False, Correlation = True, Weight = 2
+emb	0.011300086975097656s
+edg_num	4185
+Laplacian = True, DiagA = False, Correlation = False, Weight = 0
+emb	0.013750076293945312s
+edg_num	4185
+Laplacian = True, DiagA = False, Correlation = False, Weight = 1
+emb	0.011864662170410156s
+edg_num	4185
+Laplacian = True, DiagA = False, Correlation = False, Weight = 2
+emb	0.010848760604858398s
+edg_num	4185
+Laplacian = False, DiagA = True, Correlation = True, Weight = 0
+emb	0.017544984817504883s
+edg_num	4185
+Laplacian = False, DiagA = True, Correlation = True, Weight = 1
+emb	0.012921810150146484s
+edg_num	4185
+Laplacian = False, DiagA = True, Correlation = True, Weight = 2
+emb	0.01393890380859375s
+edg_num	4185
+Laplacian = False, DiagA = True, Correlation = False, Weight = 0
+emb	0.012742042541503906s
+edg_num	4185
+Laplacian = False, DiagA = True, Correlation = False, Weight = 1
+emb	0.011790752410888672s
+edg_num	4185
+Laplacian = False, DiagA = True, Correlation = False, Weight = 2
+emb	0.011713981628417969s
+edg_num	4185
+Laplacian = False, DiagA = False, Correlation = True, Weight = 0
+emb	0.012290239334106445s
+edg_num	4185
+Laplacian = False, DiagA = False, Correlation = True, Weight = 1
+emb	0.013326168060302734s
+edg_num	4185
+Laplacian = False, DiagA = False, Correlation = True, Weight = 2
+emb	0.010994195938110352s
+edg_num	4185
+Laplacian = False, DiagA = False, Correlation = False, Weight = 0
+emb	0.01161813735961914s
+edg_num	4185
+Laplacian = False, DiagA = False, Correlation = False, Weight = 1
+emb	0.00998377799987793s
+edg_num	4185
+Laplacian = False, DiagA = False, Correlation = False, Weight = 2
+emb	0.01141977310180664s
+edg_num	4185
+case21_1000
+Laplacian = True, DiagA = True, Correlation = True, Weight = 0
+emb	0.012804985046386719s
+edg_num	3695
+Laplacian = True, DiagA = True, Correlation = True, Weight = 1
+emb	0.01288914680480957s
+edg_num	3695
+Laplacian = True, DiagA = True, Correlation = True, Weight = 2
+emb	0.011861801147460938s
+edg_num	3695
+Laplacian = True, DiagA = True, Correlation = False, Weight = 0
+emb	0.01194310188293457s
+edg_num	3695
+Laplacian = True, DiagA = True, Correlation = False, Weight = 1
+emb	0.011501073837280273s
+edg_num	3695
+Laplacian = True, DiagA = True, Correlation = False, Weight = 2
+emb	0.011626958847045898s
+edg_num	3695
+Laplacian = True, DiagA = False, Correlation = True, Weight = 0
+emb	0.012187957763671875s
+edg_num	3695
+Laplacian = True, DiagA = False, Correlation = True, Weight = 1
+emb	0.013532876968383789s
+edg_num	3695
+Laplacian = True, DiagA = False, Correlation = True, Weight = 2
+emb	0.013631105422973633s
+edg_num	3695
+Laplacian = True, DiagA = False, Correlation = False, Weight = 0
+emb	0.010976076126098633s
+edg_num	3695
+Laplacian = True, DiagA = False, Correlation = False, Weight = 1
+emb	0.012672901153564453s
+edg_num	3695
+Laplacian = True, DiagA = False, Correlation = False, Weight = 2
+emb	0.010890007019042969s
+edg_num	3695
+Laplacian = False, DiagA = True, Correlation = True, Weight = 0
+emb	0.011359214782714844s
+edg_num	3695
+Laplacian = False, DiagA = True, Correlation = True, Weight = 1
+emb	0.01219630241394043s
+edg_num	3695
+Laplacian = False, DiagA = True, Correlation = True, Weight = 2
+emb	0.01195073127746582s
+edg_num	3695
+Laplacian = False, DiagA = True, Correlation = False, Weight = 0
+emb	0.011920928955078125s
+edg_num	3695
+Laplacian = False, DiagA = True, Correlation = False, Weight = 1
+emb	0.010849952697753906s
+edg_num	3695
+Laplacian = False, DiagA = True, Correlation = False, Weight = 2
+emb	0.013002872467041016s
+edg_num	3695
+Laplacian = False, DiagA = False, Correlation = True, Weight = 0
+emb	0.012046098709106445s
+edg_num	3695
+Laplacian = False, DiagA = False, Correlation = True, Weight = 1
+emb	0.01214289665222168s
+edg_num	3695
+Laplacian = False, DiagA = False, Correlation = True, Weight = 2
+emb	0.011342048645019531s
+edg_num	3695
+Laplacian = False, DiagA = False, Correlation = False, Weight = 0
+emb	0.010748863220214844s
+edg_num	3695
+Laplacian = False, DiagA = False, Correlation = False, Weight = 1
+emb	0.010708808898925781s
+edg_num	3695
+Laplacian = False, DiagA = False, Correlation = False, Weight = 2
+emb	0.0102691650390625s
+edg_num	3695
+case10_3000
+Laplacian = True, DiagA = True, Correlation = True, Weight = 0
+emb	0.0824899673461914s
+edg_num	500189
+Laplacian = True, DiagA = True, Correlation = True, Weight = 1
+emb	0.0799400806427002s
+edg_num	500189
+Laplacian = True, DiagA = True, Correlation = True, Weight = 2
+emb	0.07831907272338867s
+edg_num	500189
+Laplacian = True, DiagA = True, Correlation = False, Weight = 0
+emb	0.07865595817565918s
+edg_num	500189
+Laplacian = True, DiagA = True, Correlation = False, Weight = 1
+emb	0.07478809356689453s
+edg_num	500189
+Laplacian = True, DiagA = True, Correlation = False, Weight = 2
+emb	0.07631397247314453s
+edg_num	500189
+Laplacian = True, DiagA = False, Correlation = True, Weight = 0
+emb	0.06703996658325195s
+edg_num	500189
+Laplacian = True, DiagA = False, Correlation = True, Weight = 1
+emb	0.09880208969116211s
+edg_num	500189
+Laplacian = True, DiagA = False, Correlation = True, Weight = 2
+emb	0.07985472679138184s
+edg_num	500189
+Laplacian = True, DiagA = False, Correlation = False, Weight = 0
+emb	0.06584596633911133s
+edg_num	500189
+Laplacian = True, DiagA = False, Correlation = False, Weight = 1
+emb	0.06244707107543945s
+edg_num	500189
+Laplacian = True, DiagA = False, Correlation = False, Weight = 2
+emb	0.06479001045227051s
+edg_num	500189
+Laplacian = False, DiagA = True, Correlation = True, Weight = 0
+emb	0.05129504203796387s
+edg_num	500189
+Laplacian = False, DiagA = True, Correlation = True, Weight = 1
+emb	0.05103898048400879s
+edg_num	500189
+Laplacian = False, DiagA = True, Correlation = True, Weight = 2
+emb	0.06352615356445312s
+edg_num	500189
+Laplacian = False, DiagA = True, Correlation = False, Weight = 0
+emb	0.05500292778015137s
+edg_num	500189
+Laplacian = False, DiagA = True, Correlation = False, Weight = 1
+emb	0.05368685722351074s
+edg_num	500189
+Laplacian = False, DiagA = True, Correlation = False, Weight = 2
+emb	0.0539851188659668s
+edg_num	500189
+Laplacian = False, DiagA = False, Correlation = True, Weight = 0
+emb	0.04364275932312012s
+edg_num	500189
+Laplacian = False, DiagA = False, Correlation = True, Weight = 1
+emb	0.043068885803222656s
+edg_num	500189
+Laplacian = False, DiagA = False, Correlation = True, Weight = 2
+emb	0.04075789451599121s
+edg_num	500189
+Laplacian = False, DiagA = False, Correlation = False, Weight = 0
+emb	0.04034733772277832s
+edg_num	500189
+Laplacian = False, DiagA = False, Correlation = False, Weight = 1
+emb	0.03800702095031738s
+edg_num	500189
+Laplacian = False, DiagA = False, Correlation = False, Weight = 2
+emb	0.0386807918548584s
+edg_num	500189
+case11_3000
+Laplacian = True, DiagA = True, Correlation = True, Weight = 0
+emb	0.08587908744812012s
+edg_num	539869
+Laplacian = True, DiagA = True, Correlation = True, Weight = 1
+emb	0.08012580871582031s
+edg_num	539869
+Laplacian = True, DiagA = True, Correlation = True, Weight = 2
+emb	0.1337132453918457s
+edg_num	539869
+Laplacian = True, DiagA = True, Correlation = False, Weight = 0
+emb	0.08590888977050781s
+edg_num	539869
+Laplacian = True, DiagA = True, Correlation = False, Weight = 1
+emb	0.08039593696594238s
+edg_num	539869
+Laplacian = True, DiagA = True, Correlation = False, Weight = 2
+emb	0.08363699913024902s
+edg_num	539869
+Laplacian = True, DiagA = False, Correlation = True, Weight = 0
+emb	0.08030223846435547s
+edg_num	539869
+Laplacian = True, DiagA = False, Correlation = True, Weight = 1
+emb	0.06884217262268066s
+edg_num	539869
+Laplacian = True, DiagA = False, Correlation = True, Weight = 2
+emb	0.06871914863586426s
+edg_num	539869
+Laplacian = True, DiagA = False, Correlation = False, Weight = 0
+emb	0.06572699546813965s
+edg_num	539869
+Laplacian = True, DiagA = False, Correlation = False, Weight = 1
+emb	0.07111001014709473s
+edg_num	539869
+Laplacian = True, DiagA = False, Correlation = False, Weight = 2
+emb	0.06766104698181152s
+edg_num	539869
+Laplacian = False, DiagA = True, Correlation = True, Weight = 0
+emb	0.050620079040527344s
+edg_num	539869
+Laplacian = False, DiagA = True, Correlation = True, Weight = 1
+emb	0.055941104888916016s
+edg_num	539869
+Laplacian = False, DiagA = True, Correlation = True, Weight = 2
+emb	0.04958987236022949s
+edg_num	539869
+Laplacian = False, DiagA = True, Correlation = False, Weight = 0
+emb	0.057476043701171875s
+edg_num	539869
+Laplacian = False, DiagA = True, Correlation = False, Weight = 1
+emb	0.054499149322509766s
+edg_num	539869
+Laplacian = False, DiagA = True, Correlation = False, Weight = 2
+emb	0.051928043365478516s
+edg_num	539869
+Laplacian = False, DiagA = False, Correlation = True, Weight = 0
+emb	0.06649971008300781s
+edg_num	539869
+Laplacian = False, DiagA = False, Correlation = True, Weight = 1
+emb	0.04801607131958008s
+edg_num	539869
+Laplacian = False, DiagA = False, Correlation = True, Weight = 2
+emb	0.04170489311218262s
+edg_num	539869
+Laplacian = False, DiagA = False, Correlation = False, Weight = 0
+emb	0.042430877685546875s
+edg_num	539869
+Laplacian = False, DiagA = False, Correlation = False, Weight = 1
+emb	0.040231943130493164s
+edg_num	539869
+Laplacian = False, DiagA = False, Correlation = False, Weight = 2
+emb	0.03554391860961914s
+edg_num	539869
+case20_3000
+Laplacian = True, DiagA = True, Correlation = True, Weight = 0
+emb	0.035819053649902344s
+edg_num	32994
+Laplacian = True, DiagA = True, Correlation = True, Weight = 1
+emb	0.035921335220336914s
+edg_num	32994
+Laplacian = True, DiagA = True, Correlation = True, Weight = 2
+emb	0.03421616554260254s
+edg_num	32994
+Laplacian = True, DiagA = True, Correlation = False, Weight = 0
+emb	0.03479194641113281s
+edg_num	32994
+Laplacian = True, DiagA = True, Correlation = False, Weight = 1
+emb	0.036154985427856445s
+edg_num	32994
+Laplacian = True, DiagA = True, Correlation = False, Weight = 2
+emb	0.03328585624694824s
+edg_num	32994
+Laplacian = True, DiagA = False, Correlation = True, Weight = 0
+emb	0.03715920448303223s
+edg_num	32994
+Laplacian = True, DiagA = False, Correlation = True, Weight = 1
+emb	0.03736686706542969s
+edg_num	32994
+Laplacian = True, DiagA = False, Correlation = True, Weight = 2
+emb	0.03167891502380371s
+edg_num	32994
+Laplacian = True, DiagA = False, Correlation = False, Weight = 0
+emb	0.030900955200195312s
+edg_num	32994
+Laplacian = True, DiagA = False, Correlation = False, Weight = 1
+emb	0.03187823295593262s
+edg_num	32994
+Laplacian = True, DiagA = False, Correlation = False, Weight = 2
+emb	0.03119206428527832s
+edg_num	32994
+Laplacian = False, DiagA = True, Correlation = True, Weight = 0
+emb	0.03264784812927246s
+edg_num	32994
+Laplacian = False, DiagA = True, Correlation = True, Weight = 1
+emb	0.037101030349731445s
+edg_num	32994
+Laplacian = False, DiagA = True, Correlation = True, Weight = 2
+emb	0.029527664184570312s
+edg_num	32994
+Laplacian = False, DiagA = True, Correlation = False, Weight = 0
+emb	0.03159618377685547s
+edg_num	32994
+Laplacian = False, DiagA = True, Correlation = False, Weight = 1
+emb	0.03160691261291504s
+edg_num	32994
+Laplacian = False, DiagA = True, Correlation = False, Weight = 2
+emb	0.030239343643188477s
+edg_num	32994
+Laplacian = False, DiagA = False, Correlation = True, Weight = 0
+emb	0.03152203559875488s
+edg_num	32994
+Laplacian = False, DiagA = False, Correlation = True, Weight = 1
+emb	0.03759431838989258s
+edg_num	32994
+Laplacian = False, DiagA = False, Correlation = True, Weight = 2
+emb	0.032654762268066406s
+edg_num	32994
+Laplacian = False, DiagA = False, Correlation = False, Weight = 0
+emb	0.030083894729614258s
+edg_num	32994
+Laplacian = False, DiagA = False, Correlation = False, Weight = 1
+emb	0.03224897384643555s
+edg_num	32994
+Laplacian = False, DiagA = False, Correlation = False, Weight = 2
+emb	0.02905893325805664s
+edg_num	32994
+case21_3000
+Laplacian = True, DiagA = True, Correlation = True, Weight = 0
+emb	0.03678703308105469s
+edg_num	30487
+Laplacian = True, DiagA = True, Correlation = True, Weight = 1
+emb	0.0370938777923584s
+edg_num	30487
+Laplacian = True, DiagA = True, Correlation = True, Weight = 2
+emb	0.04008603096008301s
+edg_num	30487
+Laplacian = True, DiagA = True, Correlation = False, Weight = 0
+emb	0.03358006477355957s
+edg_num	30487
+Laplacian = True, DiagA = True, Correlation = False, Weight = 1
+emb	0.033843994140625s
+edg_num	30487
+Laplacian = True, DiagA = True, Correlation = False, Weight = 2
+emb	0.031229734420776367s
+edg_num	30487
+Laplacian = True, DiagA = False, Correlation = True, Weight = 0
+emb	0.0355381965637207s
+edg_num	30487
+Laplacian = True, DiagA = False, Correlation = True, Weight = 1
+emb	0.035555124282836914s
+edg_num	30487
+Laplacian = True, DiagA = False, Correlation = True, Weight = 2
+emb	0.04091000556945801s
+edg_num	30487
+Laplacian = True, DiagA = False, Correlation = False, Weight = 0
+emb	0.03510618209838867s
+edg_num	30487
+Laplacian = True, DiagA = False, Correlation = False, Weight = 1
+emb	0.045091867446899414s
+edg_num	30487
+Laplacian = True, DiagA = False, Correlation = False, Weight = 2
+emb	0.032691001892089844s
+edg_num	30487
+Laplacian = False, DiagA = True, Correlation = True, Weight = 0
+emb	0.031295061111450195s
+edg_num	30487
+Laplacian = False, DiagA = True, Correlation = True, Weight = 1
+emb	0.033785104751586914s
+edg_num	30487
+Laplacian = False, DiagA = True, Correlation = True, Weight = 2
+emb	0.03284621238708496s
+edg_num	30487
+Laplacian = False, DiagA = True, Correlation = False, Weight = 0
+emb	0.030907869338989258s
+edg_num	30487
+Laplacian = False, DiagA = True, Correlation = False, Weight = 1
+emb	0.031884193420410156s
+edg_num	30487
+Laplacian = False, DiagA = True, Correlation = False, Weight = 2
+emb	0.03446698188781738s
+edg_num	30487
+Laplacian = False, DiagA = False, Correlation = True, Weight = 0
+emb	0.03255295753479004s
+edg_num	30487
+Laplacian = False, DiagA = False, Correlation = True, Weight = 1
+emb	0.034622907638549805s
+edg_num	30487
+Laplacian = False, DiagA = False, Correlation = True, Weight = 2
+emb	0.032996177673339844s
+edg_num	30487
+Laplacian = False, DiagA = False, Correlation = False, Weight = 0
+emb	0.03488421440124512s
+edg_num	30487
+Laplacian = False, DiagA = False, Correlation = False, Weight = 1
+emb	0.030704975128173828s
+edg_num	30487
+Laplacian = False, DiagA = False, Correlation = False, Weight = 2
+emb	0.032099008560180664s
+edg_num	30487
+case10_5000
+Laplacian = True, DiagA = True, Correlation = True, Weight = 0
+emb	0.2046360969543457s
+edg_num	1390436
+Laplacian = True, DiagA = True, Correlation = True, Weight = 1
+emb	0.21366190910339355s
+edg_num	1390436
+Laplacian = True, DiagA = True, Correlation = True, Weight = 2
+emb	0.19323396682739258s
+edg_num	1390436
+Laplacian = True, DiagA = True, Correlation = False, Weight = 0
+emb	0.23682594299316406s
+edg_num	1390436
+Laplacian = True, DiagA = True, Correlation = False, Weight = 1
+emb	0.22078895568847656s
+edg_num	1390436
+Laplacian = True, DiagA = True, Correlation = False, Weight = 2
+emb	0.19434213638305664s
+edg_num	1390436
+Laplacian = True, DiagA = False, Correlation = True, Weight = 0
+emb	0.15270304679870605s
+edg_num	1390436
+Laplacian = True, DiagA = False, Correlation = True, Weight = 1
+emb	0.15465116500854492s
+edg_num	1390436
+Laplacian = True, DiagA = False, Correlation = True, Weight = 2
+emb	0.14612388610839844s
+edg_num	1390436
+Laplacian = True, DiagA = False, Correlation = False, Weight = 0
+emb	0.16073107719421387s
+edg_num	1390436
+Laplacian = True, DiagA = False, Correlation = False, Weight = 1
+emb	0.1508941650390625s
+edg_num	1390436
+Laplacian = True, DiagA = False, Correlation = False, Weight = 2
+emb	0.22032403945922852s
+edg_num	1390436
+Laplacian = False, DiagA = True, Correlation = True, Weight = 0
+emb	0.10736680030822754s
+edg_num	1390436
+Laplacian = False, DiagA = True, Correlation = True, Weight = 1
+emb	0.11073803901672363s
+edg_num	1390436
+Laplacian = False, DiagA = True, Correlation = True, Weight = 2
+emb	0.10828709602355957s
+edg_num	1390436
+Laplacian = False, DiagA = True, Correlation = False, Weight = 0
+emb	0.10551905632019043s
+edg_num	1390436
+Laplacian = False, DiagA = True, Correlation = False, Weight = 1
+emb	0.10533404350280762s
+edg_num	1390436
+Laplacian = False, DiagA = True, Correlation = False, Weight = 2
+emb	0.10796689987182617s
+edg_num	1390436
+Laplacian = False, DiagA = False, Correlation = True, Weight = 0
+emb	0.08029317855834961s
+edg_num	1390436
+Laplacian = False, DiagA = False, Correlation = True, Weight = 1
+emb	0.07732009887695312s
+edg_num	1390436
+Laplacian = False, DiagA = False, Correlation = True, Weight = 2
+emb	0.07317495346069336s
+edg_num	1390436
+Laplacian = False, DiagA = False, Correlation = False, Weight = 0
+emb	0.07831072807312012s
+edg_num	1390436
+Laplacian = False, DiagA = False, Correlation = False, Weight = 1
+emb	0.08000302314758301s
+edg_num	1390436
+Laplacian = False, DiagA = False, Correlation = False, Weight = 2
+emb	0.07204604148864746s
+edg_num	1390436
+case11_5000
+Laplacian = True, DiagA = True, Correlation = True, Weight = 0
+emb	0.1986382007598877s
+edg_num	1500031
+Laplacian = True, DiagA = True, Correlation = True, Weight = 1
+emb	0.19683504104614258s
+edg_num	1500031
+Laplacian = True, DiagA = True, Correlation = True, Weight = 2
+emb	0.199415922164917s
+edg_num	1500031
+Laplacian = True, DiagA = True, Correlation = False, Weight = 0
+emb	0.19855618476867676s
+edg_num	1500031
+Laplacian = True, DiagA = True, Correlation = False, Weight = 1
+emb	0.21148014068603516s
+edg_num	1500031
+Laplacian = True, DiagA = True, Correlation = False, Weight = 2
+emb	0.21093010902404785s
+edg_num	1500031
+Laplacian = True, DiagA = False, Correlation = True, Weight = 0
+emb	0.1510007381439209s
+edg_num	1500031
+Laplacian = True, DiagA = False, Correlation = True, Weight = 1
+emb	0.17077207565307617s
+edg_num	1500031
+Laplacian = True, DiagA = False, Correlation = True, Weight = 2
+emb	0.15217089653015137s
+edg_num	1500031
+Laplacian = True, DiagA = False, Correlation = False, Weight = 0
+emb	0.16427183151245117s
+edg_num	1500031
+Laplacian = True, DiagA = False, Correlation = False, Weight = 1
+emb	0.15332388877868652s
+edg_num	1500031
+Laplacian = True, DiagA = False, Correlation = False, Weight = 2
+emb	0.16098594665527344s
+edg_num	1500031
+Laplacian = False, DiagA = True, Correlation = True, Weight = 0
+emb	0.11218380928039551s
+edg_num	1500031
+Laplacian = False, DiagA = True, Correlation = True, Weight = 1
+emb	0.1607809066772461s
+edg_num	1500031
+Laplacian = False, DiagA = True, Correlation = True, Weight = 2
+emb	0.11276698112487793s
+edg_num	1500031
+Laplacian = False, DiagA = True, Correlation = False, Weight = 0
+emb	0.14324188232421875s
+edg_num	1500031
+Laplacian = False, DiagA = True, Correlation = False, Weight = 1
+emb	0.10456204414367676s
+edg_num	1500031
+Laplacian = False, DiagA = True, Correlation = False, Weight = 2
+emb	0.13831090927124023s
+edg_num	1500031
+Laplacian = False, DiagA = False, Correlation = True, Weight = 0
+emb	0.08202695846557617s
+edg_num	1500031
+Laplacian = False, DiagA = False, Correlation = True, Weight = 1
+emb	0.08096098899841309s
+edg_num	1500031
+Laplacian = False, DiagA = False, Correlation = True, Weight = 2
+emb	0.07735776901245117s
+edg_num	1500031
+Laplacian = False, DiagA = False, Correlation = False, Weight = 0
+emb	0.18082594871520996s
+edg_num	1500031
+Laplacian = False, DiagA = False, Correlation = False, Weight = 1
+emb	0.07966732978820801s
+edg_num	1500031
+Laplacian = False, DiagA = False, Correlation = False, Weight = 2
+emb	0.08564496040344238s
+edg_num	1500031
+case20_5000
+Laplacian = True, DiagA = True, Correlation = True, Weight = 0
+emb	0.07260894775390625s
+edg_num	92215
+Laplacian = True, DiagA = True, Correlation = True, Weight = 1
+emb	0.07010293006896973s
+edg_num	92215
+Laplacian = True, DiagA = True, Correlation = True, Weight = 2
+emb	0.07020020484924316s
+edg_num	92215
+Laplacian = True, DiagA = True, Correlation = False, Weight = 0
+emb	0.06644582748413086s
+edg_num	92215
+Laplacian = True, DiagA = True, Correlation = False, Weight = 1
+emb	0.06444597244262695s
+edg_num	92215
+Laplacian = True, DiagA = True, Correlation = False, Weight = 2
+emb	0.06389403343200684s
+edg_num	92215
+Laplacian = True, DiagA = False, Correlation = True, Weight = 0
+emb	0.06155204772949219s
+edg_num	92215
+Laplacian = True, DiagA = False, Correlation = True, Weight = 1
+emb	0.06199288368225098s
+edg_num	92215
+Laplacian = True, DiagA = False, Correlation = True, Weight = 2
+emb	0.060099124908447266s
+edg_num	92215
+Laplacian = True, DiagA = False, Correlation = False, Weight = 0
+emb	0.06344485282897949s
+edg_num	92215
+Laplacian = True, DiagA = False, Correlation = False, Weight = 1
+emb	0.058183908462524414s
+edg_num	92215
+Laplacian = True, DiagA = False, Correlation = False, Weight = 2
+emb	0.05867195129394531s
+edg_num	92215
+Laplacian = False, DiagA = True, Correlation = True, Weight = 0
+emb	0.05639386177062988s
+edg_num	92215
+Laplacian = False, DiagA = True, Correlation = True, Weight = 1
+emb	0.05701708793640137s
+edg_num	92215
+Laplacian = False, DiagA = True, Correlation = True, Weight = 2
+emb	0.056680917739868164s
+edg_num	92215
+Laplacian = False, DiagA = True, Correlation = False, Weight = 0
+emb	0.05755805969238281s
+edg_num	92215
+Laplacian = False, DiagA = True, Correlation = False, Weight = 1
+emb	0.0599980354309082s
+edg_num	92215
+Laplacian = False, DiagA = True, Correlation = False, Weight = 2
+emb	0.05768275260925293s
+edg_num	92215
+Laplacian = False, DiagA = False, Correlation = True, Weight = 0
+emb	0.053822994232177734s
+edg_num	92215
+Laplacian = False, DiagA = False, Correlation = True, Weight = 1
+emb	0.04986906051635742s
+edg_num	92215
+Laplacian = False, DiagA = False, Correlation = True, Weight = 2
+emb	0.05207991600036621s
+edg_num	92215
+Laplacian = False, DiagA = False, Correlation = False, Weight = 0
+emb	0.052581071853637695s
+edg_num	92215
+Laplacian = False, DiagA = False, Correlation = False, Weight = 1
+emb	0.05411887168884277s
+edg_num	92215
+Laplacian = False, DiagA = False, Correlation = False, Weight = 2
+emb	0.04939699172973633s
+edg_num	92215
+case21_5000
+Laplacian = True, DiagA = True, Correlation = True, Weight = 0
+emb	0.07521796226501465s
+edg_num	84721
+Laplacian = True, DiagA = True, Correlation = True, Weight = 1
+emb	0.09685707092285156s
+edg_num	84721
+Laplacian = True, DiagA = True, Correlation = True, Weight = 2
+emb	0.07195401191711426s
+edg_num	84721
+Laplacian = True, DiagA = True, Correlation = False, Weight = 0
+emb	0.07590818405151367s
+edg_num	84721
+Laplacian = True, DiagA = True, Correlation = False, Weight = 1
+emb	0.10383391380310059s
+edg_num	84721
+Laplacian = True, DiagA = True, Correlation = False, Weight = 2
+emb	0.09657883644104004s
+edg_num	84721
+Laplacian = True, DiagA = False, Correlation = True, Weight = 0
+emb	0.07485604286193848s
+edg_num	84721
+Laplacian = True, DiagA = False, Correlation = True, Weight = 1
+emb	0.0672299861907959s
+edg_num	84721
+Laplacian = True, DiagA = False, Correlation = True, Weight = 2
+emb	0.08243012428283691s
+edg_num	84721
+Laplacian = True, DiagA = False, Correlation = False, Weight = 0
+emb	0.0684499740600586s
+edg_num	84721
+Laplacian = True, DiagA = False, Correlation = False, Weight = 1
+emb	0.07767105102539062s
+edg_num	84721
+Laplacian = True, DiagA = False, Correlation = False, Weight = 2
+emb	0.060688018798828125s
+edg_num	84721
+Laplacian = False, DiagA = True, Correlation = True, Weight = 0
+emb	0.060330867767333984s
+edg_num	84721
+Laplacian = False, DiagA = True, Correlation = True, Weight = 1
+emb	0.06424069404602051s
+edg_num	84721
+Laplacian = False, DiagA = True, Correlation = True, Weight = 2
+emb	0.059207916259765625s
+edg_num	84721
+Laplacian = False, DiagA = True, Correlation = False, Weight = 0
+emb	0.06136679649353027s
+edg_num	84721
+Laplacian = False, DiagA = True, Correlation = False, Weight = 1
+emb	0.058281898498535156s
+edg_num	84721
+Laplacian = False, DiagA = True, Correlation = False, Weight = 2
+emb	0.05448484420776367s
+edg_num	84721
+Laplacian = False, DiagA = False, Correlation = True, Weight = 0
+emb	0.05666685104370117s
+edg_num	84721
+Laplacian = False, DiagA = False, Correlation = True, Weight = 1
+emb	0.058306217193603516s
+edg_num	84721
+Laplacian = False, DiagA = False, Correlation = True, Weight = 2
+emb	0.058382272720336914s
+edg_num	84721
+Laplacian = False, DiagA = False, Correlation = False, Weight = 0
+emb	0.05626797676086426s
+edg_num	84721
+Laplacian = False, DiagA = False, Correlation = False, Weight = 1
+emb	0.05162477493286133s
+edg_num	84721
+Laplacian = False, DiagA = False, Correlation = False, Weight = 2
+emb	0.06029486656188965s
+edg_num	84721
+case10_10000
+Laplacian = True, DiagA = True, Correlation = True, Weight = 0
+emb	0.6791820526123047s
+edg_num	5560068
+Laplacian = True, DiagA = True, Correlation = True, Weight = 1
+emb	0.6633720397949219s
+edg_num	5560068
+Laplacian = True, DiagA = True, Correlation = True, Weight = 2
+emb	0.6741082668304443s
+edg_num	5560068
+Laplacian = True, DiagA = True, Correlation = False, Weight = 0
+emb	0.6781890392303467s
+edg_num	5560068
+Laplacian = True, DiagA = True, Correlation = False, Weight = 1
+emb	0.6639270782470703s
+edg_num	5560068
+Laplacian = True, DiagA = True, Correlation = False, Weight = 2
+emb	0.6580469608306885s
+edg_num	5560068
+Laplacian = True, DiagA = False, Correlation = True, Weight = 0
+emb	0.5099189281463623s
+edg_num	5560068
+Laplacian = True, DiagA = False, Correlation = True, Weight = 1
+emb	0.5300321578979492s
+edg_num	5560068
+Laplacian = True, DiagA = False, Correlation = True, Weight = 2
+emb	0.5263698101043701s
+edg_num	5560068
+Laplacian = True, DiagA = False, Correlation = False, Weight = 0
+emb	0.5407240390777588s
+edg_num	5560068
+Laplacian = True, DiagA = False, Correlation = False, Weight = 1
+emb	0.5248658657073975s
+edg_num	5560068
+Laplacian = True, DiagA = False, Correlation = False, Weight = 2
+emb	0.5142042636871338s
+edg_num	5560068
+Laplacian = False, DiagA = True, Correlation = True, Weight = 0
+emb	0.3321652412414551s
+edg_num	5560068
+Laplacian = False, DiagA = True, Correlation = True, Weight = 1
+emb	0.37445998191833496s
+edg_num	5560068
+Laplacian = False, DiagA = True, Correlation = True, Weight = 2
+emb	0.3153080940246582s
+edg_num	5560068
+Laplacian = False, DiagA = True, Correlation = False, Weight = 0
+emb	0.3942751884460449s
+edg_num	5560068
+Laplacian = False, DiagA = True, Correlation = False, Weight = 1
+emb	0.33009815216064453s
+edg_num	5560068
+Laplacian = False, DiagA = True, Correlation = False, Weight = 2
+emb	0.31158995628356934s
+edg_num	5560068
+Laplacian = False, DiagA = False, Correlation = True, Weight = 0
+emb	0.26975417137145996s
+edg_num	5560068
+Laplacian = False, DiagA = False, Correlation = True, Weight = 1
+emb	0.26665592193603516s
+edg_num	5560068
+Laplacian = False, DiagA = False, Correlation = True, Weight = 2
+emb	0.21546220779418945s
+edg_num	5560068
+Laplacian = False, DiagA = False, Correlation = False, Weight = 0
+emb	0.2219829559326172s
+edg_num	5560068
+Laplacian = False, DiagA = False, Correlation = False, Weight = 1
+emb	0.2208240032196045s
+edg_num	5560068
+Laplacian = False, DiagA = False, Correlation = False, Weight = 2
+emb	0.22206997871398926s
+edg_num	5560068
+case11_10000
+Laplacian = True, DiagA = True, Correlation = True, Weight = 0
+emb	0.773402214050293s
+edg_num	6000489
+Laplacian = True, DiagA = True, Correlation = True, Weight = 1
+emb	0.8240361213684082s
+edg_num	6000489
+Laplacian = True, DiagA = True, Correlation = True, Weight = 2
+emb	0.741541862487793s
+edg_num	6000489
+Laplacian = True, DiagA = True, Correlation = False, Weight = 0
+emb	0.7487611770629883s
+edg_num	6000489
+Laplacian = True, DiagA = True, Correlation = False, Weight = 1
+emb	0.7472209930419922s
+edg_num	6000489
+Laplacian = True, DiagA = True, Correlation = False, Weight = 2
+emb	0.7724061012268066s
+edg_num	6000489
+Laplacian = True, DiagA = False, Correlation = True, Weight = 0
+emb	0.5477128028869629s
+edg_num	6000489
+Laplacian = True, DiagA = False, Correlation = True, Weight = 1
+emb	0.5442209243774414s
+edg_num	6000489
+Laplacian = True, DiagA = False, Correlation = True, Weight = 2
+emb	0.5368309020996094s
+edg_num	6000489
+Laplacian = True, DiagA = False, Correlation = False, Weight = 0
+emb	0.5486290454864502s
+edg_num	6000489
+Laplacian = True, DiagA = False, Correlation = False, Weight = 1
+emb	0.5520098209381104s
+edg_num	6000489
+Laplacian = True, DiagA = False, Correlation = False, Weight = 2
+emb	0.5262110233306885s
+edg_num	6000489
+Laplacian = False, DiagA = True, Correlation = True, Weight = 0
+emb	0.4112062454223633s
+edg_num	6000489
+Laplacian = False, DiagA = True, Correlation = True, Weight = 1
+emb	0.4118788242340088s
+edg_num	6000489
+Laplacian = False, DiagA = True, Correlation = True, Weight = 2
+emb	0.4005739688873291s
+edg_num	6000489
+Laplacian = False, DiagA = True, Correlation = False, Weight = 0
+emb	0.42283010482788086s
+edg_num	6000489
+Laplacian = False, DiagA = True, Correlation = False, Weight = 1
+emb	0.43637514114379883s
+edg_num	6000489
+Laplacian = False, DiagA = True, Correlation = False, Weight = 2
+emb	0.41359424591064453s
+edg_num	6000489
+Laplacian = False, DiagA = False, Correlation = True, Weight = 0
+emb	0.2576918601989746s
+edg_num	6000489
+Laplacian = False, DiagA = False, Correlation = True, Weight = 1
+emb	0.3335731029510498s
+edg_num	6000489
+Laplacian = False, DiagA = False, Correlation = True, Weight = 2
+emb	0.26225996017456055s
+edg_num	6000489
+Laplacian = False, DiagA = False, Correlation = False, Weight = 0
+emb	0.8024246692657471s
+edg_num	6000489
+Laplacian = False, DiagA = False, Correlation = False, Weight = 1
+emb	0.28835606575012207s
+edg_num	6000489
+Laplacian = False, DiagA = False, Correlation = False, Weight = 2
+emb	0.2474071979522705s
+edg_num	6000489
+case20_10000
+Laplacian = True, DiagA = True, Correlation = True, Weight = 0
+emb	0.23841309547424316s
+edg_num	391057
+Laplacian = True, DiagA = True, Correlation = True, Weight = 1
+emb	0.19159197807312012s
+edg_num	391057
+Laplacian = True, DiagA = True, Correlation = True, Weight = 2
+emb	0.19057083129882812s
+edg_num	391057
+Laplacian = True, DiagA = True, Correlation = False, Weight = 0
+emb	0.15406584739685059s
+edg_num	391057
+Laplacian = True, DiagA = True, Correlation = False, Weight = 1
+emb	0.15889310836791992s
+edg_num	391057
+Laplacian = True, DiagA = True, Correlation = False, Weight = 2
+emb	0.14933395385742188s
+edg_num	391057
+Laplacian = True, DiagA = False, Correlation = True, Weight = 0
+emb	0.14573287963867188s
+edg_num	391057
+Laplacian = True, DiagA = False, Correlation = True, Weight = 1
+emb	0.1560051441192627s
+edg_num	391057
+Laplacian = True, DiagA = False, Correlation = True, Weight = 2
+emb	0.1495649814605713s
+edg_num	391057
+Laplacian = True, DiagA = False, Correlation = False, Weight = 0
+emb	0.14803194999694824s
+edg_num	391057
+Laplacian = True, DiagA = False, Correlation = False, Weight = 1
+emb	0.1490941047668457s
+edg_num	391057
+Laplacian = True, DiagA = False, Correlation = False, Weight = 2
+emb	0.13046979904174805s
+edg_num	391057
+Laplacian = False, DiagA = True, Correlation = True, Weight = 0
+emb	0.15178537368774414s
+edg_num	391057
+Laplacian = False, DiagA = True, Correlation = True, Weight = 1
+emb	0.14172005653381348s
+edg_num	391057
+Laplacian = False, DiagA = True, Correlation = True, Weight = 2
+emb	0.15352773666381836s
+edg_num	391057
+Laplacian = False, DiagA = True, Correlation = False, Weight = 0
+emb	0.15018081665039062s
+edg_num	391057
+Laplacian = False, DiagA = True, Correlation = False, Weight = 1
+emb	0.13221502304077148s
+edg_num	391057
+Laplacian = False, DiagA = True, Correlation = False, Weight = 2
+emb	0.12060403823852539s
+edg_num	391057
+Laplacian = False, DiagA = False, Correlation = True, Weight = 0
+emb	0.1144871711730957s
+edg_num	391057
+Laplacian = False, DiagA = False, Correlation = True, Weight = 1
+emb	0.12160682678222656s
+edg_num	391057
+Laplacian = False, DiagA = False, Correlation = True, Weight = 2
+emb	0.10459303855895996s
+edg_num	391057
+Laplacian = False, DiagA = False, Correlation = False, Weight = 0
+emb	0.10916876792907715s
+edg_num	391057
+Laplacian = False, DiagA = False, Correlation = False, Weight = 1
+emb	0.11066770553588867s
+edg_num	391057
+Laplacian = False, DiagA = False, Correlation = False, Weight = 2
+emb	0.1770639419555664s
+edg_num	391057
+case21_10000
+Laplacian = True, DiagA = True, Correlation = True, Weight = 0
+emb	0.16930198669433594s
+edg_num	358804
+Laplacian = True, DiagA = True, Correlation = True, Weight = 1
+emb	0.16919708251953125s
+edg_num	358804
+Laplacian = True, DiagA = True, Correlation = True, Weight = 2
+emb	0.17755413055419922s
+edg_num	358804
+Laplacian = True, DiagA = True, Correlation = False, Weight = 0
+emb	0.17102789878845215s
+edg_num	358804
+Laplacian = True, DiagA = True, Correlation = False, Weight = 1
+emb	0.15146613121032715s
+edg_num	358804
+Laplacian = True, DiagA = True, Correlation = False, Weight = 2
+emb	0.16187620162963867s
+edg_num	358804
+Laplacian = True, DiagA = False, Correlation = True, Weight = 0
+emb	0.1526792049407959s
+edg_num	358804
+Laplacian = True, DiagA = False, Correlation = True, Weight = 1
+emb	0.17394614219665527s
+edg_num	358804
+Laplacian = True, DiagA = False, Correlation = True, Weight = 2
+emb	0.23650217056274414s
+edg_num	358804
+Laplacian = True, DiagA = False, Correlation = False, Weight = 0
+emb	0.15795397758483887s
+edg_num	358804
+Laplacian = True, DiagA = False, Correlation = False, Weight = 1
+emb	0.4506359100341797s
+edg_num	358804
+Laplacian = True, DiagA = False, Correlation = False, Weight = 2
+emb	0.1437079906463623s
+edg_num	358804
+Laplacian = False, DiagA = True, Correlation = True, Weight = 0
+emb	0.15613007545471191s
+edg_num	358804
+Laplacian = False, DiagA = True, Correlation = True, Weight = 1
+emb	0.14909601211547852s
+edg_num	358804
+Laplacian = False, DiagA = True, Correlation = True, Weight = 2
+emb	0.13704395294189453s
+edg_num	358804
+Laplacian = False, DiagA = True, Correlation = False, Weight = 0
+emb	0.12900519371032715s
+edg_num	358804
+Laplacian = False, DiagA = True, Correlation = False, Weight = 1
+emb	0.12353205680847168s
+edg_num	358804
+Laplacian = False, DiagA = True, Correlation = False, Weight = 2
+emb	0.13015508651733398s
+edg_num	358804
+Laplacian = False, DiagA = False, Correlation = True, Weight = 0
+emb	0.12374687194824219s
+edg_num	358804
+Laplacian = False, DiagA = False, Correlation = True, Weight = 1
+emb	0.13832616806030273s
+edg_num	358804
+Laplacian = False, DiagA = False, Correlation = True, Weight = 2
+emb	0.1563279628753662s
+edg_num	358804
+Laplacian = False, DiagA = False, Correlation = False, Weight = 0
+emb	0.11481690406799316s
+edg_num	358804
+Laplacian = False, DiagA = False, Correlation = False, Weight = 1
+emb	0.12259602546691895s
+edg_num	358804
+Laplacian = False, DiagA = False, Correlation = False, Weight = 2
+emb	0.1114192008972168s
+edg_num	358804
