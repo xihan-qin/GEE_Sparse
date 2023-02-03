@@ -103,12 +103,17 @@ class Model:
         if Dis[i,j] == 1:
           edg_num += 1
     
-    sbm.X = Dis
+    edge_list = self.sym_adj_to_edg(Dis)
+
+    sbm.X = edge_list
+    sbm.A = Dis
     sbm.Y = Y
     sbm.d = d
     sbm.bl = Bl
     sbm.pp = pp
     sbm.edg_num = edg_num
+
+    
 
     return sbm
 
@@ -136,16 +141,25 @@ class Model:
     # theta is the n*1 array, from beta distribution with a=1, b=4
     theta = np.random.beta(1,4, (n,1)) 
 
+    edg_num = 0
     Dis = np.zeros((n,n), dtype=int)
     for i in range(n):
       Dis[i,i] = 0 # assign diagonal 0
       for j in range(i+1,n):
         Dis[i,j] = int(np.random.rand() < theta[i]*theta[j]*Bl[Y[i], Y[j]])
         Dis[j,i] = Dis[i,j]   
-    
-    dcsbm.X = Dis
+        if Dis[i,j] == 1:
+          edg_num += 1
+          
+    edge_list = self.sym_adj_to_edg(Dis)
+    dcsbm.X = edge_list
+    dcsbm.A = Dis
     dcsbm.Y = Y
     dcsbm.d = d
+    dcsbm.bl = Bl
+    dcsbm.theta = theta
+    dcsbm.pp = pp
+    dcsbm.edg_num = edg_num
     return dcsbm
 
   def DC_SBM_edg_list(self, d, pp, Bl):
@@ -341,10 +355,6 @@ class Model:
       e.g. "1,870,1" means node 1 and node 870 forms an edge and the weight is 1 
     """
     DataSet = copy.deepcopy(self)
-    if DataSet.edglist:
-      edge_list = DataSet.X
-    else:
-      edge_list = self.sym_adj_to_edg(DataSet.X)
     
     output_folder = f"{outfolder}/{DataSet.name}_{DataSet.n}_nodes"
     if not os.path.exists(output_folder):
@@ -376,6 +386,7 @@ class Model:
       f4.write(f"{test_idx[i]}\t{test_labels[i,0]}\n")
     f4.close()
 
+    edge_list = DataSet.X
     f5 = open(f"{output_folder}/{DataSet.name}_edges.tsv", "w")
     for (i,j,w) in edge_list:
       f5.write(f"{i}\t{j}\t{w}\n")
