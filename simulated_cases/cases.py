@@ -6,7 +6,7 @@ case_10, case_11, case_20, case_21
 """
 
 ################################################################################
-from simulated_models import *
+from .simulated_models import *
 ################################################################################
 
 class Case(Model):
@@ -36,7 +36,6 @@ class Case(Model):
 
     case.bd = bd
     case.name = "case10"
-    case.edglist = False    
     case.info = """
     SBM with 3 classes and defined probabilities with 95% unknown labels.
     """
@@ -57,8 +56,7 @@ class Case(Model):
     case = case.add_unknown(0.05)
 
     case.bd = bd
-    case.name = "case10"
-    case.edglist = False    
+    case.name = "case10"   
     case.info = """
     SBM with 3 classes and defined probabilities with 5% unknown labels.
     """
@@ -80,7 +78,6 @@ class Case(Model):
 
     case.bd = bd
     case.name = "case10"
-    case.edglist = False    
     case.info = """
     SBM with 3 classes and defined probabilities with fully known labels
     80% for training and 20% for testing
@@ -102,8 +99,7 @@ class Case(Model):
     case = case.for_cluster()
 
     case.bd = bd
-    case.name = "case10"
-    case.edglist = False    
+    case.name = "case10"  
     case.info = """
     SBM with 3 classes for clustering
     """
@@ -124,8 +120,7 @@ class Case(Model):
     case = case.split_sets(0.95)
 
     case.bd = bd
-    case.name = "case11"
-    case.edglist = False    
+    case.name = "case11"    
     case.info = """
     SBM with 5 classes and defined probabilities with 95% unknown labels.  
     """
@@ -144,8 +139,7 @@ class Case(Model):
     case = case.split_sets(0.2)
 
     case.bd = bd
-    case.name = "case11"
-    case.edglist = False    
+    case.name = "case11"   
     case.info = """
     SBM with 5 classes and defined probabilities with fully known labels
     80% for training and 20% for testing
@@ -166,7 +160,6 @@ class Case(Model):
     
     case.bd = bd
     case.name = "case11"
-    case.edglist = False    
     case.info = """
     SBM with 5 classes for clustering
     """
@@ -187,8 +180,7 @@ class Case(Model):
     case = case.add_unknown(0.95)
     
     case.bd = bd
-    case.name = "case20"
-    case.edglist = False    
+    case.name = "case20"  
     case.info = """
     DC-SBM with 3 classes and defined probabilities with 95% unknown labels.
     """
@@ -207,8 +199,7 @@ class Case(Model):
     case = case.split_sets(0.2)
     
     case.bd = bd
-    case.name = "case20"
-    case.edglist = False    
+    case.name = "case20" 
     case.info = """
     DC-SBM with 3 classes and defined probabilities with fully known labels
     80% for training and 20% for testing
@@ -228,8 +219,7 @@ class Case(Model):
     case = case.for_cluster()
 
     case.bd = bd
-    case.name = "case20"
-    case.edglist = False      
+    case.name = "case20"   
     case.info = """
     DC-SBM with 3 classes for clustering
     """
@@ -250,7 +240,6 @@ class Case(Model):
     
     case.bd = bd
     case.name = "case21"
-    case.edglist = True   
     case.info = """
     DC-SBM with 10 classes and defined probabilities with 95% unknown labels.
     Edge list version.     
@@ -268,11 +257,10 @@ class Case(Model):
 
     case = self.DC_SBM(d, pp, Bl)
     case = case.split_sets(0.2)
-    case = case.to_edge_list()
+    # case = case.to_edge_list()
     
     case.bd = bd
     case.name = "case21"
-    case.edglist = True 
     case.info = """
     DC-SBM with 10 classes and defined probabilities with fully known labels.
     Edge list version. 
@@ -293,7 +281,6 @@ class Case(Model):
 
     case.bd = bd
     case.name = "case21"
-    case.edglist = True 
     case.info = """
     DC-SBM with 10 classes for clustering.
     Edge list version. 
@@ -315,9 +302,51 @@ class Case(Model):
     case = case.split_sets(0.2)
     
     case.name = "case100"
-    case.edglist = True 
     case.info = """
     Affinity SBM from two-truth paper
     """
     return case
 ###-------------------case_100_end-------------------------------------------###
+###-------------------case_paper_SBM_start-----------------------------------###
+  def case_paper_SBM(self):
+    """
+        The paper uses 2000 nodes
+        Two classes: 0.5 and 0.5
+    """
+    d = 2
+    pp = np.full((d, 1), 1/d)
+
+    # posibilities between classes including the classes with themselves
+    Bl = np.array([[0.13, 0.10], [0.10, 0.13]])
+
+    case = self.SBM(d, pp, Bl)
+    case = case.split_sets(0.2)
+    
+    case.name = "case paper SBM"
+    case.info = """
+    SBM from GEE paper
+    """
+    return case
+###-------------------case_paper_SBM_end-------------------------------------###
+###-------------------case_paper_SBM_start-----------------------------------###
+  def case_paper_DCSBM(self):
+    """
+        The paper uses 2000 nodes
+        Two classes: 0.5 and 0.5
+    """
+    d = 2
+    pp = np.full((d, 1), 1/d)
+
+    # posibilities between classes including the classes with themselves
+    Bl = np.array([[0.9, 0.1], [0.1, 0.5]])
+
+    case = self.DC_SBM(d, pp, Bl)
+    case = case.split_sets(0.2)
+    
+    case.name = "case paper DCSBM"  
+    case.info = """
+    DC-SBM from GEE paper
+    """
+    return case
+
+###-------------------case_paper_SBM_end-------------------------------------###
