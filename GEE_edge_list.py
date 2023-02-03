@@ -29,9 +29,9 @@ class GraphEncoderEmbed_Edge:
 
     X = X.copy()
     Y = Y.copy()
-    
+
     X = self.to_s3_list(X)
-    
+
     emb_strat = time.time()
 
     if kwargs['DiagA']:
@@ -39,16 +39,16 @@ class GraphEncoderEmbed_Edge:
 
     if kwargs['Laplacian']:
       X = self.Laplacian(X, n)
-    
+
     w_flag = kwargs['Weight']
     Z, W = self.Basic(X, Y, n, w_flag)
 
     if kwargs['Correlation']:
       Z = self.Correlation(Z, n)
-    
+
     emb_end = time.time()
     emb_time = emb_end - emb_strat
-    
+
     return Z, W, emb_time
 
   def Basic(self, X, Y, n, w_flag):
@@ -65,13 +65,13 @@ class GraphEncoderEmbed_Edge:
     k = Y[:,0].max() + 1
 
     W = self.get_W(Y, n, k, w_flag)
-    Z = np.zeros((n,k))    
+    Z = np.zeros((n,k))
     for row in X:
       [v_i, v_j, edg_i_j] = row
       v_i = int(v_i)
       v_j = int(v_j)
 
-      label_i = Y[v_i][0] 
+      label_i = Y[v_i][0]
       label_j = Y[v_j][0]
 
       if label_j >= 0:
@@ -82,7 +82,7 @@ class GraphEncoderEmbed_Edge:
     return Z, W
 
   def get_W(self, Y, n, k, w_flag):
-    # W: sparse matrix for encoder marix. 
+    # W: sparse matrix for encoder marix.
     W = np.zeros((n,k))
     if w_flag == 2:
       # one-hot
@@ -108,9 +108,9 @@ class GraphEncoderEmbed_Edge:
         for i in range(n):
           k_i = Y[i,0]
           if k_i >=0:
-            W[i,k_i] = nk[0,k_i]/n    
+            W[i,k_i] = nk[0,k_i]/n
     return W
- 
+
 
   def Diagonal(self, X, n):
     # add self-loop to edg list -- add 1 connection for each (i,i)
@@ -132,15 +132,15 @@ class GraphEncoderEmbed_Edge:
         D[v_j] = D[v_j] + edg_i_j
 
     D = np.power(D, -0.5)
-    
+
     for i in range(s):
       X[i,2] = X[i,2] * D[int(X[i,0])] * D[int(X[i,1])]
 
     return X
-  
+
   def Correlation(self, Z, n):
     """
-      Calculate each row's 2-norm (Euclidean distance). 
+      Calculate each row's 2-norm (Euclidean distance).
       e.g.row_x: [ele_i,ele_j,ele_k]. norm2 = sqr(sum(ele_i^2+ele_i^2+ele_i^2))
       then divide each element by their row norm
       e.g. [ele_i/norm2,ele_j/norm2,ele_k/norm2]
@@ -150,7 +150,7 @@ class GraphEncoderEmbed_Edge:
     Z = np.nan_to_num(Z/reshape_row_norm)
 
     return Z
-    
+
   def to_s3_list(self,X):
     """
       if input X only has 2 columns, make it into s3 edge list.
