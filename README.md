@@ -13,14 +13,14 @@
     <th colspan="2">Lap = T, Diag = F, Cor = F</th>
   </tr>
   <tr>
-    <th>GEE</th>
-    <th>GEE_sparse</th>
-    <th>GEE</th>
-    <th>GEE_sparse</th>
-    <th>GEE</th>
-    <th>GEE_sparse</th>
-    <th>GEE</th>
-    <th>GEE_sparse</th>
+    <th>GEE(s)</th>
+    <th>GEE_sparse(s)</th>
+    <th>GEE(s)</th>
+    <th>GEE_sparse(s)</th>
+    <th>GEE(s)</th>
+    <th>GEE_sparse(s)</th>
+    <th>GEE(s)</th>
+    <th>GEE_sparse(s)</th>
   </tr>
 </thead>
 <tbody>
