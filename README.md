@@ -6,4 +6,15 @@
 Data Set      |     GEE      |   GEE_sparse   |     GEE      |   GEE_sparse   |
   ----------- | :----------: | -------------: | :----------: |  -------------:|
 | CiteSeer    |     0.096    |      0.040     |     0.097    |      0.032     |
-		
+
+
+
+|             |          Grouping           ||
+First Header  | Second Header | Third Header |
+ ------------ | :-----------: | -----------: |
+Content       |          *Long Cell*        ||
+Content       |   **Cell**    |         Cell |
+
+New section   |     More      |         Data |
+And more      | With an escaped '\|'         ||  
+[Prototype table]
