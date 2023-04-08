@@ -1,5 +1,5 @@
 # GEE_Sparse
-This project aims to improve Graph Encoder Embedding (GEE) Algorithm in both speed and storage for large sparse graphs.
+This project aims to improve Graph Encoder Embedding (GEE) Algorithm in both speed and storage for large sparse graphs. In practice, most graphs are large and sparse. 
 
 It is worth to mention that the original GEE is already faster than most of the State-of-the-art (SOTA) graph embedding methods. 
 
