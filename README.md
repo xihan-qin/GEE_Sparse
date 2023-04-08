@@ -71,32 +71,27 @@
   <tr>
     <td>CL-100K-1d8-L9</td>
     <td>4.926</td>
-    <td>1.091</td>
+    <td><strong>1.091</strong></td>   
     <td>4.850</td>
-    <td>0.978</td>
+    <td><strong>0.978</strong></td>   
     <td>4.166</td>
-    <td>0.992</td>
+    <td><strong>0.992</strong></td>   
     <td>3.823</td>
-    <td>1.095</td>
+    <td><strong>1.095</strong></td>   
   </tr>
   <tr>
     <td>CL-100K-1d8-L5</td>
     <td>604.018</td>
-    <td>174.552</td>
+    <td><strong>174.552</strong></td>   
     <td>585.288</td>
-    <td>147.790</td>
+    <td><strong>147.790</strong></td>   
     <td>633.746</td>
-    <td>118.705</td>
+    <td><strong>118.705</strong></td>   
     <td>571.360</td>
-    <td>123.691</td>
+    <td><strong>123.691</strong></td>   
   </tr>
 </tbody>
 </table>
-
-|             | Lap = T, Diag = T, Cor = T   || Lap = T, Diag = T, Cor = F   ||
-Data Set      |     GEE      |   GEE_sparse   |     GEE      |   GEE_sparse   |
-  ----------- | :----------: | -------------: | :----------: |  -------------:|
-| CiteSeer    |     0.096    |      0.040     |     0.097    |      0.032     |
 
 
 
