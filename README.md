@@ -1,6 +1,6 @@
 # GEE_Sparse
 
-![Preview Image](https://github.com/xihan-qin/GEE_Sparse/blob/main/GEE_vs_GEE_sparse.png)
+![SBM 10,000 nodes](https://github.com/xihan-qin/GEE_Sparse/blob/main/test_results/GEE_vs_GEE_sparse.png)
 
 
 <table>
@@ -95,3 +95,93 @@
 
 
 
+<table>
+<thead>
+  <tr>
+    <th rowspan="2">Data Set</th>
+    <th colspan="2">Lap = F, Diag = T, Cor = T</th>
+    <th colspan="2">Lap = F, Diag = T, Cor = F</th>
+    <th colspan="2">Lap = F, Diag = F, Cor = T</th>
+    <th colspan="2">Lap = F, Diag = F, Cor = F</th>
+  </tr>
+  <tr>
+    <th>GEE(s)</th>
+    <th>GEE_sparse(s)</th>
+    <th>GEE(s)</th>
+    <th>GEE_sparse(s)</th>
+    <th>GEE(s)</th>
+    <th>GEE_sparse(s)</th>
+    <th>GEE(s)</th>
+    <th>GEE_sparse(s)</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>CiteSeer</td>
+    <td><strong>0.024</strong></td>
+    <td>0.031</td>
+    <td><strong>0.024</strong></td>
+    <td>0.033</td>
+    <td><strong>0.016</strong></td>    
+    <td>0.034</td>
+    <td><strong>0.014</strong></td>
+    <td>0.031</td>
+  </tr>
+  <tr>
+    <td>Cora</td>
+    <td><strong>0.024</strong></td>
+    <td>0.025</td>
+    <td><strong>0.026</strong></td>    
+    <td><strong>0.026</strong></td>   
+    <td><strong>0.023</strong></td>   
+    <td>0.024</td>
+    <td><strong>0.019</strong></td>      
+    <td>0.025</td>
+  </tr>
+  <tr>
+    <td>Proteins-all</td>
+    <td>0.830</td>
+    <td><strong>0.399</strong></td>      
+    <td>0.623</td>
+    <td><strong>0.411</strong></td>      
+    <td>1.143</td>
+    <td><strong>0.432</strong></td>      
+    <td>0.518</td>
+    <td><strong>0.462</strong></td>      
+  </tr>
+  <tr>
+    <td>PubMed</td>
+    <td>0.231</td>
+    <td><strong>0.201</strong></td>        
+    <td>0.201</td>
+    <td>0.228</td>
+    <td><strong>0.185</strong></td>    
+    <td><strong>0.170</strong></td>    
+    <td>0.188</td>
+    <td><strong>0.177</strong></td>    
+    <td>0.183</td>
+  </tr>
+  <tr>
+    <td>CL-100K-1d8-L9</td>
+    <td>1.330</td>
+    <td><strong>0.909</strong></td>        
+    <td>1.322</td>
+    <td><strong>0.936</strong></td>    
+    <td>1.114</td>
+    <td><strong>0.924</strong></td>    
+    <td><strong>1.058</strong></td>    
+    <td>1.360</td>
+  </tr>
+  <tr>
+    <td>CL-100K-1d8-L5</td>
+    <td>203.860</td>
+    <td><strong>108.977</strong></td>       
+    <td>192.780</td>
+    <td><strong>132.160</strong></td>       
+    <td>171.838</td>
+    <td><strong>125.935</strong></td>       
+    <td>171.714</td>
+    <td><strong>106.264</strong></td>   
+  </tr>
+</tbody>
+</table>
