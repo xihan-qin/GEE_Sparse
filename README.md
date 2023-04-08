@@ -9,12 +9,12 @@ Data Set      |     GEE      |   GEE_sparse   |     GEE      |   GEE_sparse   |
 
 
 
-|             |          Grouping           ||
-First Header  | Second Header | Third Header |
- ------------ | :-----------: | -----------: |
-Content       |          *Long Cell*        ||
-Content       |   **Cell**    |         Cell |
-
-New section   |     More      |         Data |
-And more      | With an escaped '\|'         ||  
-[Prototype table]
+| :                   MathJax \|\| Image                 : |||
+| :------------ | :-------- | :----------------------------- |
+| Apple         | : Apple : | Apple                          \
+| Banana        | Banana    | Banana                         \
+| Orange        | Orange    | Orange                         |
+| :     Rowspan is 4     : || :        How's it?           : |
+| ^^     A. Peach          ||    1. ![example][cell-image]   |
+| ^^     B. Orange         || ^^ 2. $I = \int \rho R^{2} dV$ |
+| ^^     C. Banana         || **It's OK!**                   |
