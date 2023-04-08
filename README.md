@@ -1,8 +1,20 @@
 # GEE_Sparse
 
+
+
+# GEE vs GEE_Sparse
+## Data sets
+Simulated datasets are generated using Stochastic Block Model (SBM).
+The settings:
+* 3 classes with class probabilities [0.2, 0.3, 0.5] 
+* between class probability 0.1 and within class probability 0.13. 
+* Node sizes: 100, 1000, 3000, 5000, 10,000. 
+
+The figure below shows a simulated data set generated from SBW with the setting described above and a node size of 10,000. 
+![SBM 10,000 nodes](https://github.com/xihan-qin/GEE_Sparse/blob/main/test_results/SBM_10%2C000.png)
+
+## Comparison results
 ![SBM 10,000 nodes](https://github.com/xihan-qin/GEE_Sparse/blob/main/test_results/GEE_vs_GEE_sparse.png)
-
-
 <table>
 <thead>
   <tr>
@@ -126,7 +138,7 @@
     <td>0.034</td>
     <td><strong>0.014</strong></td>
     <td>0.031</td>
-  </tr>
+  </tr> 
   <tr>
     <td>Cora</td>
     <td><strong>0.024</strong></td>
@@ -185,3 +197,5 @@
   </tr>
 </tbody>
 </table>
+
+
