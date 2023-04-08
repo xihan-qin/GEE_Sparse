@@ -5,6 +5,7 @@
 # GEE vs GEE_Sparse
 ## Data sets
 Simulated datasets are generated using Stochastic Block Model (SBM).
+
 The settings:
 * 3 classes with class probabilities [0.2, 0.3, 0.5] 
 * between class probability 0.1 and within class probability 0.13. 
