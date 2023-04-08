@@ -26,47 +26,47 @@
 <tbody>
   <tr>
     <td>CiteSeer</td>
-    <td><strong>0.096</strong></td>
-    <td>0.040</td>
+    <td>0.096</td>
+    <td><strong>0.040</strong></td>
     <td>0.097</td>
-    <td>0.032</td>
+    <td><strong>0.032</strong></td>    
     <td>0.053</td>
-    <td>0.032</td>
+    <td><strong>0.032</strong></td>    
     <td>0.051</td>
-    <td>0.030</td>
+    <td><strong>0.030</strong></td>        
   </tr>
   <tr>
     <td>Cora</td>
     <td>0.083</td>
-    <td>0.028</td>
+    <td><strong>0.028</strong></td>    
     <td>0.088</td>
-    <td>0.027</td>
+    <td><strong>0.027</strong></td>        
     <td>0.068</td>
-    <td>0.033</td>
+    <td><strong>0.033</strong></td>            
     <td>0.068</td>
-    <td>0.026</td>
+    <td><strong>0.026</strong></td>              
   </tr>
   <tr>
     <td>Proteins-all</td>
     <td>2.268</td>
-    <td>0.438</td>
+    <td><strong>0.438</strong></td>      
     <td>2.259</td>
-    <td>0.419</td>
+    <td><strong>0.419</strong></td>          
     <td>1.866</td>
-    <td>0.391</td>
+    <td><strong>0.391</strong></td>          
     <td>1.846</td>
-    <td>0.478</td>
+    <td><strong>0.478</strong></td>      
   </tr>
   <tr>
     <td>PubMed</td>
     <td>0.776</td>
-    <td>0.194</td>
+    <td><strong>0.194</strong></td>       
     <td>0.739</td>
-    <td>0.201</td>
+    <td><strong>0.201</strong></td>       
     <td>0.673</td>
-    <td>0.208</td>
+    <td><strong>0.208</strong></td>       
     <td>0.560</td>
-    <td>0.199</td>
+    <td><strong>0.199</strong></td>   
   </tr>
   <tr>
     <td>CL-100K-1d8-L9</td>
