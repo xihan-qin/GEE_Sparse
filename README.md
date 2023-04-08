@@ -3,16 +3,15 @@
 ![Preview Image](https://github.com/xihan-qin/GEE_Sparse/blob/main/GEE_vs_GEE_sparse.png)
 
 
-| :        Fruits \|\| Food       : |||
-| :--------- | :-------- | :--------  |
-| Apple      | : Apple : | Apple      \
-| Banana     |   Banana  | Banana     \
-| Orange     |   Orange  | Orange     |
-| :   Rowspan is 4    : || How's it?  |
-|^^    A. Peach         ||   1. Fine :|
-|^^    B. Orange        ||^^ 2. Bad   |
-|^^    C. Banana        ||  It's OK!  |
-
+|              Stage | Direct Products | ATP Yields |
+| -----------------: | --------------: | ---------: |
+|         Glycolysis |          2 ATP              ||
+| ^^                 |          2 NADH |   3--5 ATP |
+| Pyruvaye oxidation |          2 NADH |      5 ATP |
+|  Citric acid cycle |          2 ATP              ||
+| ^^                 |          6 NADH |     15 ATP |
+| ^^                 |          2 FADH |      3 ATP |
+|                               30--32 ATP        |||
 
 
 |             | Lap = T, Diag = T, Cor = T   || Lap = T, Diag = T, Cor = F   ||
