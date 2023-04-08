@@ -3,7 +3,7 @@ This project aims to improve Graph Encoder Embedding (GEE) Algorithm in both spe
 
 It is worth to mention that the original GEE is already faster than most of the State-of-the-art (SOTA) graph embedding methods. 
 
-The origin GEE repo:
+GEE repo:
 https://github.com/cshen6/GraphEmd
 
 # GEE vs GEE_Sparse
