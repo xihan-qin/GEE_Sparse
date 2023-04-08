@@ -26,7 +26,7 @@
 <tbody>
   <tr>
     <td>CiteSeer</td>
-    <td>0.096</td>
+    <td style="font-weight:bold">0.096</td>
     <td>0.040</td>
     <td>0.097</td>
     <td>0.032</td>
