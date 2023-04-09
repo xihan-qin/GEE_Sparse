@@ -36,7 +36,7 @@ The Table below lists the information of each dataset.
 ### Simulated Datasets
 The figure below shows the comparison of GEE and GEE_Sparse on simulated datasets.
 
-For the largest simulated graph with 10K nodes and 5.6MM edges, GEE_sparse only takes 0.6s on average, while GEE takes 52.4s, which is 86 times slower than GEE_sparse. 
+For the largest simulated graph with 10K nodes and 5.6MM edges, GEE_sparse only takes 0.6s on average, while GEE takes 52.4s, which is **86 times** slower than **GEE_sparse**. 
 
 ![SBM](https://github.com/xihan-qin/GEE_Sparse/blob/main/test_results/GEE_vs_GEE_sparse.png)
 ### Real Datasets
