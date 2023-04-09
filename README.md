@@ -34,8 +34,10 @@ The Table below lists the information of each dataset.
 
 ## Comparison results
 ### Simulated Datasets
+The figure below shows the comparison of GEE and GEE_Sparse on simulated datasets.
 ![SBM](https://github.com/xihan-qin/GEE_Sparse/blob/main/test_results/GEE_vs_GEE_sparse.png)
 ### Real Datasets
+The tables below show the comparison of GEE and GEE_Sparse on the real datasets. 
 <table>
 <thead>
   <tr>
