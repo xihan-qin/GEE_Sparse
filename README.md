@@ -6,6 +6,13 @@ It is worth mentioning that the original GEE is already faster than most of the 
 GEE repo:
 https://github.com/cshen6/GraphEmd
 
+## Installation
+
+```python setup.py install```
+
+## Usage
+```python GEE_sparse.py```
+
 # GEE vs GEE_Sparse
 ## Data sets
 ### Simulated Datasets
