@@ -7,7 +7,6 @@ GEE repo:
 https://github.com/cshen6/GraphEmd
 
 ## Installation
-
 ```python setup.py install```
 
 ## Usage
