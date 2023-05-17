@@ -1,21 +1,9 @@
 # -*- coding: utf-8 -*-
 ################################################################################
-import sys
 import numpy as np
-import copy
-from numpy import linalg as LA
-from tensorflow import keras
-from tensorflow.keras.utils import to_categorical
-from sklearn.metrics.cluster import adjusted_rand_score
-from sklearn.cluster import KMeans
-from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
-from sklearn import metrics
 import time
 # for sparse matrix
 from scipy import sparse
-#early stop
-from keras.callbacks import EarlyStopping
-from tensorflow.keras.callbacks import ModelCheckpoint
 ################################################################################
 
 # invalide devide resutls will be nan
@@ -31,27 +19,27 @@ class GraphEncoderEmbed_sparse:
     Y = Y.copy()
 
     if kwargs['EdgeList']:
-      size_flag = self.edge_list_size
+      size_flag = self.edge_list_size    
       X = self.Edge_to_Sparse(X, n, size_flag)
     
-    emb_strat = time.time()
-
+    total_emb_strat = time.time()
+    
     if kwargs['DiagA']:
       X = self.Diagonal(X, n)
 
     if kwargs['Laplacian']:
       X = self.Laplacian(X, n)
-    
+
     w_flag = kwargs['Weight']
     Z, W = self.Basic(X, Y, n, w_flag)
 
     if kwargs['Correlation']:
       Z = self.Correlation(Z)
-    
-    emb_end = time.time()
-    emb_time = emb_end - emb_strat
-    
-    return Z, W, emb_time
+
+    total_emb_end = time.time()
+    total_emb_time = total_emb_end - total_emb_strat
+
+    return Z, W, total_emb_time
 
   def Basic(self, X, Y, n, w_flag):
     """
@@ -67,7 +55,6 @@ class GraphEncoderEmbed_sparse:
       input Y is numpy array with size (n,1):
       -- value -1 indicate no lable
       -- value >=0 indicate real label
-      input train_idx: a list of indices of input X for training set 
     """
     # assign k to the max along the first column
     # Note for python, label Y starts from 0. Python index starts from 0. thus size k should be max + 1
@@ -80,30 +67,18 @@ class GraphEncoderEmbed_sparse:
   def get_W(self, Y, n, k, w_flag):
     # W: sparse matrix for encoder marix. 
     W = sparse.dok_matrix((n, k), dtype=np.float32)
-    if w_flag == 2:
-      # one-hot
-      for i in range(n):
-        k_i = Y[i,0]
-        if k_i >=0:
-          W[i,k_i] = 1
-    else:
-      #nk: 1*n array, contains the number of observations in each class
-      nk = np.zeros((1,k))
-      for i in range(k):
-        nk[0,i] = np.count_nonzero(Y[:,0]==i)
-      if w_flag == 0:
-        #follow the paper: W[i,k] = {1/nk if Yi==k, otherwise 0}
-        for i in range(n):
-          k_i = Y[i,0]
-          if k_i >=0:
-            W[i,k_i] = 1/nk[0,k_i]
 
-      if w_flag == 1:
-        # use the nk/n for the weight
-        for i in range(n):
-          k_i = Y[i,0]
-          if k_i >=0:
-            W[i,k_i] = nk[0,k_i]/n    
+    #nk: 1*n array, contains the number of observations in each class
+    nk = np.zeros((1,k))
+    for i in range(k):
+      nk[0,i] = np.count_nonzero(Y[:,0]==i)
+
+    #follow the paper: W[i,k] = {1/nk if Yi==k, otherwise 0}
+    for i in range(n):
+      k_i = Y[i,0]
+      if k_i >=0:
+        W[i,k_i] = 1/nk[0,k_i]
+
     return W
 
   def Diagonal(self, X, n):
@@ -129,11 +104,6 @@ class GraphEncoderEmbed_sparse:
     _D = D.power(-0.5)
     # D^-0.5 x A x D^-0.5
     L = _D.dot(X_sparse.dot(_D)) 
-
-    # _L = _D.dot(X_sparse.dot(_D))    
-    # # L = I - D^-0.5 x A x D^-0.5
-    # I = sparse.identity(n)
-    # L = I - _L   
 
     return L
   
