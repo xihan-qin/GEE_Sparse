@@ -1,7 +1,9 @@
+# -*- coding: utf-8 -*-
 ################################################################################
 from utils import DataSet
 from GEE_sparse import *
-from GEE_edge_list import *
+# from GEE_edge_list import *
+from other_versions.GEE_edge_list_for_sparse import *
 from GNN import *
 import os
 import itertools
@@ -17,21 +19,31 @@ def main():
 
 
     #-----set_case_and_node_start-----#
-    # case_name_list = ['case10', 'case11', 'case20', 'case21'] #['case21']
-    # node_num_list = [100, 1000, 3000, 5000, 10000] # [3000]
+    case_name_list = ['case10']   #['case10', 'case11', 'case20', 'case21'] #['case21']
+    node_num_list = [10]   #[100, 1000, 3000, 5000, 10000] #100000 is too large, will be kiiled if run
 
     # real casea
-    case_name_list = ['citeseer', 'cora', 'proteins-all', 'PubMed', "CL-100K-1d8-L9"]
-    node_num_list = [3264, 2708, 43471, 19717, 92482]
+    # case_name_list = ['citeseer', 'cora', 'proteins-all', 'PubMed', "CL-100K-1d8-L9"]
+    # node_num_list = [3264, 2708, 43471, 19717, 92482]
+    # case_name_list = ['CL-10M-1d8-L5']      
+    # node_num_list = [10000000]    
     #-----set_case_and_node_end-----#
 
 
     #-----set_options_start---------#
-    opt_all = generate_opts()
+    # opt_all = generate_opts()
 
-    # opt_all = [{"Laplacian": False, "DiagA": False, "Correlation": False, "Weight": 0},
-    #            {"Laplacian": False, "DiagA": False, "Correlation": False, "Weight": 1},
-    #            {"Laplacian": False, "DiagA": False, "Correlation": False, "Weight": 2}]
+    # opt_all = [{"Laplacian": True, "DiagA": True, "Correlation": True, "Weight": 0},
+    #            {"Laplacian": True, "DiagA": True, "Correlation": False, "Weight": 0},
+    #            {"Laplacian": True, "DiagA": False, "Correlation": True, "Weight": 0},
+    #            {"Laplacian": True, "DiagA": False, "Correlation": False, "Weight": 0},
+    #            {"Laplacian": False, "DiagA": True, "Correlation": True, "Weight": 0},
+    #            {"Laplacian": False, "DiagA": True, "Correlation": False, "Weight": 0},
+    #            {"Laplacian": False, "DiagA": False, "Correlation": True, "Weight": 0},
+    #            {"Laplacian": False, "DiagA": False, "Correlation": False, "Weight": 0}]
+
+    opt_all = [{"Laplacian": True, "DiagA": True, "Correlation": True, "Weight": 0}]
+    # opt_all = [{"Laplacian": False, "DiagA": False, "Correlation": False, "Weight": 0}]
     #-----set_options_end-----------#
 
 
@@ -43,15 +55,15 @@ def main():
 
     #----GEE_sparse_start-----------#
     gee_flag = "sparse"
-    out_file_name = "model_sparse_results_citeseer_to_CL-100K-1d8-L9"
+    out_file_name = "model_sparse_case_10000_node"
     run(gee_flag, case_name_list, node_num_list, opt_all, output_folder, out_file_name, choice)
     #----GEE_sparse_end-------------#
 
 
     #----GEE_edgList_start----------#
-    gee_flag = "Edge_list"
-    out_file_name = "model_edge_results_citeseer_to_CL-100K-1d8-L9"
-    run(gee_flag, case_name_list, node_num_list, opt_all, output_folder, out_file_name, choice)
+    # gee_flag = "Edge_list"
+    # out_file_name = "model_edge_10000_node_test"
+    # run(gee_flag, case_name_list, node_num_list, opt_all, output_folder, out_file_name, choice)
      #----GEE_edgList_end-----------#
 
 
@@ -63,12 +75,11 @@ def run(gee_flag, case_name_list, node_num_list, opt_all, output_folder, out_fil
 
     # supervised
     class_flag = "supervised"
-    # --- from files ----
-    run_from_files(case_flag, class_flag, gee_flag, case_name_list, node_num_list, opt_all, output_folder, out_file_name, choice)
+    # # --- from files ----
+    # run_from_files(case_flag, class_flag, gee_flag, case_name_list, node_num_list, opt_all, output_folder, out_file_name, choice)
 
-    # # # ---- from models -----
-    # run_from_models(gee_flag, case_name_list, node_num_list,  opt_all, output_folder, out_file_name, choice)
-
+    # ---- from models -----
+    run_from_models(gee_flag, case_name_list, node_num_list,  opt_all, output_folder, out_file_name, choice)
 
 # -----------------------------------------------------------------------------#
 def run_from_files(case_flag, class_flag, gee_flag, case_name_list, node_num_list,  opt_all, output_folder, out_file_name, choice):
