@@ -12,7 +12,7 @@ np.seterr(divide='ignore', invalid='ignore')
 ############------------graph_encoder_embed_start----------------###############
 class GraphEncoderEmbed_sparse:
   def run(self, X, Y, n, **kwargs):
-    defaultKwargs = {'EdgeList': False, 'DiagA': True, 'Laplacian': False, 'Correlation': True, "Weight": 0} # weight option: {0: 1/nk, 1 : nk/n, 2: one-hot}
+    defaultKwargs = {'EdgeList': False, 'DiagA': True, 'Laplacian': False, 'Correlation': True} 
     kwargs = { **defaultKwargs, **kwargs}
 
     X = X.copy()
@@ -30,8 +30,7 @@ class GraphEncoderEmbed_sparse:
     if kwargs['Laplacian']:
       X = self.Laplacian(X, n)
 
-    w_flag = kwargs['Weight']
-    Z, W = self.Basic(X, Y, n, w_flag)
+    Z, W = self.Basic(X, Y, n)
 
     if kwargs['Correlation']:
       Z = self.Correlation(Z)
@@ -41,7 +40,7 @@ class GraphEncoderEmbed_sparse:
 
     return Z, W, total_emb_time
 
-  def Basic(self, X, Y, n, w_flag):
+  def Basic(self, X, Y, n):
     """
       graph embedding basic function
       input X is sparse csr matrix of adjacency matrix
@@ -60,11 +59,11 @@ class GraphEncoderEmbed_sparse:
     # Note for python, label Y starts from 0. Python index starts from 0. thus size k should be max + 1
     k = Y[:,0].max() + 1
 
-    W = self.get_W(Y, n, k, w_flag)
+    W = self.get_W(Y, n, k)
     Z = X.dot(W)  
     return Z, W
 
-  def get_W(self, Y, n, k, w_flag):
+  def get_W(self, Y, n, k):
     # W: sparse matrix for encoder marix. 
     W = sparse.dok_matrix((n, k), dtype=np.float32)
 
@@ -175,3 +174,4 @@ class GraphEncoderEmbed_sparse:
 
 
 ############------------graph_encoder_embed_end------------------###############
+
