@@ -1,30 +1,17 @@
 # -*- coding: utf-8 -*-
-################################################################################
-import sys
-import numpy as np
-import copy
-from numpy import linalg as LA
-from tensorflow import keras
-from tensorflow.keras.utils import to_categorical
-from sklearn.metrics.cluster import adjusted_rand_score
-from sklearn.cluster import KMeans
-from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
-from sklearn import metrics
-import time
-# for sparse matrix
-from scipy import sparse
-#early stop
-from keras.callbacks import EarlyStopping
-from tensorflow.keras.callbacks import ModelCheckpoint
-################################################################################
 
+################################################################################
+import numpy as np
+from numpy import linalg as LA
+import time
+################################################################################
 # invalide devide resutls will be nan
 np.seterr(divide='ignore', invalid='ignore')
 
 ############------------graph_encoder_embed_start----------------###############
 class GraphEncoderEmbed_Edge:
   def run(self, X, Y, n, **kwargs):
-    defaultKwargs = {'DiagA': True, 'Laplacian': False, 'Correlation': True, "Weight": 0} # weight option: {0: 1/nk, 1 : nk/n, 2: one-hot}
+    defaultKwargs = {'DiagA': True, 'Laplacian': False, 'Correlation': True} 
     kwargs = { **defaultKwargs, **kwargs}
 
     X = X.copy()
@@ -32,7 +19,7 @@ class GraphEncoderEmbed_Edge:
 
     X = self.to_s3_list(X)
 
-    emb_strat = time.time()
+    total_emb_strat = time.time()
 
     if kwargs['DiagA']:
       X = self.Diagonal(X, n)
@@ -40,18 +27,17 @@ class GraphEncoderEmbed_Edge:
     if kwargs['Laplacian']:
       X = self.Laplacian(X, n)
 
-    w_flag = kwargs['Weight']
-    Z, W = self.Basic(X, Y, n, w_flag)
+    Z, W = self.Basic(X, Y, n)
 
     if kwargs['Correlation']:
       Z = self.Correlation(Z, n)
 
-    emb_end = time.time()
-    emb_time = emb_end - emb_strat
+    total_emb_end = time.time()
+    total_emb_time = total_emb_end - total_emb_strat
 
-    return Z, W, emb_time
-
-  def Basic(self, X, Y, n, w_flag):
+    return Z, W, total_emb_time
+  
+  def Basic(self, X, Y, n):
     """
       graph embedding basic function
       input X is S3 edge list
@@ -64,7 +50,7 @@ class GraphEncoderEmbed_Edge:
     # Note for python, label Y starts from 0. Python index starts from 0. thus size k should be max + 1
     k = Y[:,0].max() + 1
 
-    W = self.get_W(Y, n, k, w_flag)
+    W = self.get_W(Y, n, k)
     Z = np.zeros((n,k))
     for row in X:
       [v_i, v_j, edg_i_j] = row
@@ -81,34 +67,19 @@ class GraphEncoderEmbed_Edge:
 
     return Z, W
 
-  def get_W(self, Y, n, k, w_flag):
-    # W: sparse matrix for encoder marix.
+  def get_W(self, Y, n, k):
     W = np.zeros((n,k))
-    if w_flag == 2:
-      # one-hot
-      for i in range(n):
-        k_i = Y[i,0]
-        if k_i >=0:
-          W[i,k_i] = 1
-    else:
-      #nk: 1*n array, contains the number of observations in each class
-      nk = np.zeros((1,k))
-      for i in range(k):
-        nk[0,i] = np.count_nonzero(Y[:,0]==i)
+    #nk: 1*n array, contains the number of observations in each class
+    nk = np.zeros((1,k))
+    for i in range(k):
+      nk[0,i] = np.count_nonzero(Y[:,0]==i)
 
-      if w_flag == 0:
-        #follow the paper: W[i,k] = {1/nk if Yi==k, otherwise 0}
-        for i in range(n):
-          k_i = Y[i,0]
-          if k_i >=0:
-            W[i,k_i] = 1/nk[0,k_i]
+    #follow the paper: W[i,k] = {1/nk if Yi==k, otherwise 0}
+    for i in range(n):
+      k_i = Y[i,0]
+      if k_i >=0:
+        W[i,k_i] = 1/nk[0,k_i]
 
-      if w_flag == 1:
-        # use the nk/n for the weight
-        for i in range(n):
-          k_i = Y[i,0]
-          if k_i >=0:
-            W[i,k_i] = nk[0,k_i]/n
     return W
 
 
