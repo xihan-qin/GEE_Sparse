@@ -1,16 +1,16 @@
 # GEE_Sparse
 This project aims to improve Graph Encoder Embedding (GEE) Algorithm in both speed and storage for large sparse graphs. In practice, most graphs are large and sparse. 
 
-It is worth mentioning that the original GEE is already faster than most of the State-of-the-art (SOTA) graph embedding methods.
+It is worth mentioning that the original GEE algorithm is already faster than other state-of-the-art graph embedding algorithms. 
 
 GEE repo:
 https://github.com/cshen6/GraphEmd
 
 ## Installation
-```python setup.py install```
+```pip install -r requirements.txt```
 
 ## Usage
-```python GEE_sparse.py```
+```python3 compare.py sparse```
 
 # GEE vs GEE_Sparse
 ## Data sets
