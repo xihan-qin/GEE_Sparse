@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-    Skip using the weight matrix, use nk directly to calcualte embedding.
-"""
+
 ################################################################################
 import sys
 import numpy as np
@@ -41,7 +39,7 @@ class GraphEncoderEmbed_Edge:
     if kwargs['DiagA']:
       X = self.Diagonal(X, n)
     diag_end = time.time()
-    diag_time = diag_end - diag_start  
+    diag_time = diag_end - diag_start
 
     lap_start = time.time()
     if kwargs['Laplacian']:
@@ -51,16 +49,16 @@ class GraphEncoderEmbed_Edge:
 
     basic_start = time.time()
     w_flag = kwargs['Weight']
-    Z = self.Basic_2(X, Y, n, w_flag)
-    W = None
+    Z, W = self.Basic(X, Y, n, w_flag)
     basic_end = time.time()
-    basic_time = basic_end - basic_start 
+    basic_time = basic_end - basic_start
+
 
     cor_start = time.time()
     if kwargs['Correlation']:
       Z = self.Correlation(Z, n)
     cor_end = time.time()
-    cor_time = cor_end - cor_start  
+    cor_time = cor_end - cor_start
 
     total_emb_end = time.time()
     total_emb_time = total_emb_end - total_emb_strat
@@ -70,10 +68,10 @@ class GraphEncoderEmbed_Edge:
     print(cor_time)
     print(basic_time)
     print(total_emb_time)
-    
-    return Z, W, total_emb_time
 
-  def Basic_2(self, X, Y, n, w_flag):
+    return Z, W, total_emb_time
+  
+  def Basic(self, X, Y, n, w_flag):
     """
       graph embedding basic function
       input X is S3 edge list
@@ -84,42 +82,53 @@ class GraphEncoderEmbed_Edge:
     """
     # assign k to the max along the first column
     # Note for python, label Y starts from 0. Python index starts from 0. thus size k should be max + 1
-    k_start = time.time()
     k = Y[:,0].max() + 1
-    k_end = time.time()
-    k_time = k_end - k_start
-    
-    nk_start = time.time()
-    #nk: 1*n array, contains the number of observations in each class
-    nk = np.zeros((1,k))
-    for i in range(k):
-      nk[0,i] = np.count_nonzero(Y[:,0]==i)
-    nk_end = time.time()    
-    nk_time = nk_end - nk_start
 
-    Z_start = time.time()
+    W = self.get_W(Y, n, k, w_flag)
     Z = np.zeros((n,k))
     for row in X:
       [v_i, v_j, edg_i_j] = row
       v_i = int(v_i)
       v_j = int(v_j)
 
-      label_i = Y[v_i, 0]
-      label_j = Y[v_j, 0]     
+      label_i = Y[v_i][0]
+      label_j = Y[v_j][0]
 
       if label_j >= 0:
-        Z[v_i, label_j] = Z[v_i, label_j] + edg_i_j/nk[0,label_j]
+        Z[v_i, label_j] = Z[v_i, label_j] + W[v_j, label_j]*edg_i_j
       if (label_i >= 0) and (v_i != v_j):
-        Z[v_j, label_i] = Z[v_j, label_i] + edg_i_j/nk[0,label_i]
+        Z[v_j, label_i] = Z[v_j, label_i] + W[v_i, label_i]*edg_i_j
 
-    Z_end = time.time()
-    Z_time = Z_end - Z_start
+    return Z, W
 
-    print(f"k: {k_time}")
-    print(f"nk: {nk_time}")
-    print(f"Z: {Z_time}")
+  def get_W(self, Y, n, k, w_flag):
+    W = np.zeros((n,k))
+    if w_flag == 2:
+      # one-hot
+      for i in range(n):
+        k_i = Y[i,0]
+        if k_i >=0:
+          W[i,k_i] = 1
+    else:
+      #nk: 1*n array, contains the number of observations in each class
+      nk = np.zeros((1,k))
+      for i in range(k):
+        nk[0,i] = np.count_nonzero(Y[:,0]==i)
 
-    return Z
+      if w_flag == 0:
+        #follow the paper: W[i,k] = {1/nk if Yi==k, otherwise 0}
+        for i in range(n):
+          k_i = Y[i,0]
+          if k_i >=0:
+            W[i,k_i] = 1/nk[0,k_i]
+
+      if w_flag == 1:
+        # use the nk/n for the weight
+        for i in range(n):
+          k_i = Y[i,0]
+          if k_i >=0:
+            W[i,k_i] = nk[0,k_i]/n
+    return W
 
 
   def Diagonal(self, X, n):

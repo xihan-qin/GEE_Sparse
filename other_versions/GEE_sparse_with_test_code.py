@@ -1,7 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-    Skip using the weight matrix, use nk directly to calcualte embedding.
-"""
 ################################################################################
 import sys
 import numpy as np
@@ -37,29 +34,46 @@ class GraphEncoderEmbed_sparse:
       size_flag = self.edge_list_size    
       X = self.Edge_to_Sparse(X, n, size_flag)
     
-    emb_strat = time.time()
+    total_emb_strat = time.time()
 
+    diag_start = time.time()
+    
     if kwargs['DiagA']:
       X = self.Diagonal(X, n)
+    diag_end = time.time()
+    diag_time = diag_end - diag_start
 
+    lap_start = time.time()
     if kwargs['Laplacian']:
       X = self.Laplacian(X, n)
-  
-    
+    lap_end = time.time()
+    lap_time = lap_end - lap_start
+
+    basic_start = time.time()
     w_flag = kwargs['Weight']
-    W = None
-    Z = self.Basic_2(X, Y, n, w_flag)
+    Z, W = self.Basic(X, Y, n, w_flag)
+    basic_end = time.time()
+    basic_time = basic_end - basic_start
 
 
+    cor_start = time.time()
     if kwargs['Correlation']:
       Z = self.Correlation(Z)
-    
-    emb_end = time.time()
-    emb_time = emb_end - emb_strat
-    
-    return Z, W, emb_time
+    cor_end = time.time()
+    cor_time = cor_end - cor_start
 
-  def Basic_2(self, X, Y, n, w_flag):
+    total_emb_end = time.time()
+    total_emb_time = total_emb_end - total_emb_strat
+
+    print(diag_time)
+    print(lap_time)
+    print(cor_time)
+    print(basic_time)
+    print(total_emb_time)
+
+    return Z, W, total_emb_time
+
+  def Basic(self, X, Y, n, w_flag):
     """
       graph embedding basic function
       input X is sparse csr matrix of adjacency matrix
@@ -75,35 +89,43 @@ class GraphEncoderEmbed_sparse:
       -- value >=0 indicate real label
       input train_idx: a list of indices of input X for training set 
     """
+    # assign k to the max along the first column
+    # Note for python, label Y starts from 0. Python index starts from 0. thus size k should be max + 1
     k = Y[:,0].max() + 1
-    
-    #nk: 1*n array, contains the number of observations in each class
-    nk = np.zeros((1,k))
-    for i in range(k):
-      nk[0,i] = np.count_nonzero(Y[:,0]==i)
-    
-    
-    Z = sparse.dok_matrix((n, k), dtype=np.float32)
-    # X is csr sparse, go over the rows
-    # if direct iterate, will get (0, col_idx), weight -- note the first is always 0
-    # but cannot direct extract from  (0, col_idx), weight, because it is a class with attribute array and data to store them seperately
-    # try .__dict__ to see all attributes
-    row_id = -1
-    for row in X:
-        # two arrays store col_idx and edge_weight differently
-        row_id += 1
-        col_ids = row.indices
-        weights = row.data
-        for i in range(row.indptr[0], row.indptr[1]):
-          col_id = col_ids[i]
-          edg_w  = weights[i]   
-          k_i = Y[col_id,0]
-          # label -1 indicate unkown nodes
-          if k_i >=0:
-            Z[row_id,k_i] += 1/nk[0,k_i] * edg_w  
-    Z = sparse.csr_matrix(Z)
-    return Z
 
+    W = self.get_W(Y, n, k, w_flag)
+    Z = X.dot(W)  
+    return Z, W
+
+  def get_W(self, Y, n, k, w_flag):
+    # W: sparse matrix for encoder marix. 
+    W = sparse.dok_matrix((n, k), dtype=np.float32)
+    if w_flag == 2:
+      # one-hot
+      for i in range(n):
+        k_i = Y[i,0]
+        if k_i >=0:
+          W[i,k_i] = 1
+    else:
+      #nk: 1*n array, contains the number of observations in each class
+      nk = np.zeros((1,k))
+      for i in range(k):
+        nk[0,i] = np.count_nonzero(Y[:,0]==i)
+
+      if w_flag == 0:
+        #follow the paper: W[i,k] = {1/nk if Yi==k, otherwise 0}
+        for i in range(n):
+          k_i = Y[i,0]
+          if k_i >=0:
+            W[i,k_i] = 1/nk[0,k_i]
+
+      if w_flag == 1:
+        # use the nk/n for the weight
+        for i in range(n):
+          k_i = Y[i,0]
+          if k_i >=0:
+            W[i,k_i] = nk[0,k_i]/n    
+    return W
 
   def Diagonal(self, X, n):
     """
