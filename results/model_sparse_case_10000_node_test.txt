@@ -1,4 +1,0 @@
-case10_10000
-Laplacian = True, DiagA = True, Correlation = True, Weight = 0
-emb	0.6017708778381348s
-edg_num	5560068
