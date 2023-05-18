@@ -10,7 +10,7 @@ https://github.com/cshen6/GraphEmd
 ```pip install -r requirements.txt```
 
 ## Usage
-```python3 compare.py sparse```
+```python3 run_GEE.py sparse```
 
 # GEE vs GEE_Sparse
 ## Data sets
