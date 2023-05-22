@@ -14,7 +14,7 @@ def main():
 ################################################################################
 def run(emb, opts):
   case = Case(1000)
-  test_case = case.case_paper_SBM()   
+  test_case = case.case_10_fully_known()   
   if emb == "sparse":  
     Z, W, emb_time = run_sparse(test_case, opts)
 
