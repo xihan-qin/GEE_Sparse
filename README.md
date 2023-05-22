@@ -10,11 +10,11 @@ https://github.com/cshen6/GraphEmd
 ```pip install -r requirements.txt```
 
 ## Usage
-### run GEE_sparse 
+* run GEE_sparse 
 ```python3 run_GEE.py sparse```
-### run GEE_edge_list 
+* run GEE_edge_list 
 ```python3 compare.py edglist```
-### compare GEE_sparse and GEE_edge_list 
+* compare GEE_sparse and GEE_edge_list 
 ```python3 compare.py compare```
 
 # GEE vs GEE_Sparse
