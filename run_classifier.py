@@ -59,10 +59,6 @@ def dataset_preprocess(dataset, Z):
   return dataset
 #---------------------------------pre_prep_end---------------------------------#
 #---------------------------------GNN_start------------------------------------#
-
-# https://www.kaggle.com/c/talkingdata-mobile-user-demographics/discussion/22567
-# https://github.com/tkipf/pygcn/blob/1600b5b748b3976413d1e307540ccc62605b4d6d/pygcn/utils.py#L73
-
 def batch_generator(X, y, k, batch_size, shuffle):
     number_of_batches = int(X.shape[0]/batch_size)
     counter = 0
