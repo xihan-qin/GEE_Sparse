@@ -22,6 +22,14 @@ https://github.com/cshen6/GraphEmd
 
   ```python3 run_GEE.py compare```
 
+* run GEE_sparse with LDA 
+
+  ```python3 run_classifier.py LDA```
+
+* run GEE_sparse with Neural Networks
+
+  ```python3 run_classifier.py NN```
+
 # GEE vs GEE_Sparse
 ## Data sets
 ### Simulated Datasets
