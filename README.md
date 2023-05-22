@@ -12,15 +12,15 @@ https://github.com/cshen6/GraphEmd
 ## Usage
 * run GEE_sparse 
 
-```python3 run_GEE.py sparse```
+  ```python3 run_GEE.py sparse```
 
 * run GEE_edge_list 
 
-```python3 compare.py edglist```
+  ```python3 compare.py edglist```
 
 * compare GEE_sparse and GEE_edge_list 
 
-```python3 compare.py compare```
+  ```python3 compare.py compare```
 
 # GEE vs GEE_Sparse
 ## Data sets
