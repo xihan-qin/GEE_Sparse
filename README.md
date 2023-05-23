@@ -32,16 +32,18 @@ Running GEE with demonstrated Neural Networks needs tensorflow.
 ```pip install -r requirements_classifiers.txt```
 
 NOTE:
- 
+
 For windows, do not pip install tensorflow directly, follow the official document to install with WSL2:
 https://www.tensorflow.org/install/pip
 
 If encountering error: Unable to find libdevice directory (${CUDA_DIR}/nvvm/libdevice)
+
 Can downgrade the tensorflow to 2.10.*
+
 Or, can try find solutions from these links: 
-https://discuss.tensorflow.org/t/cant-find-libdevice-directory-cuda-dir-nvvm-libdevice/11896
-https://github.com/tensorflow/tensorflow/issues/58681
-https://github.com/aws/sagemaker-distribution/issues/15
+* https://discuss.tensorflow.org/t/cant-find-libdevice-directory-cuda-dir-nvvm-libdevice/11896
+* https://github.com/tensorflow/tensorflow/issues/58681
+* https://github.com/aws/sagemaker-distribution/issues/15
 
 
 * run GEE_sparse with LDA 
