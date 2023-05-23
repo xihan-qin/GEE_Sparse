@@ -29,8 +29,6 @@ Running GEE with demonstrated Neural Networks needs tensorflow.
   ```python3 run_GEE.py compare```
 
 ### Runing embedding with classifier
-```pip install -r requirements_classifiers.txt```
-
 NOTE:
 
 For windows, do not pip install tensorflow directly, follow the official document to install with WSL2:
@@ -43,6 +41,7 @@ https://discuss.tensorflow.org/t/cant-find-libdevice-directory-cuda-dir-nvvm-lib
 https://github.com/tensorflow/tensorflow/issues/58681<br />
 https://github.com/aws/sagemaker-distribution/issues/15<br />
 
+```pip install -r requirements_classifiers.txt```
 
 * run GEE_sparse with LDA 
 
