@@ -31,7 +31,8 @@ Running GEE with demonstrated Neural Networks needs tensorflow.
 ### Runing embedding with classifier
 ```pip install -r requirements_classifiers.txt```
 
-NOTE: 
+NOTE:
+ 
 For windows, do not pip install tensorflow directly, follow the official document to install with WSL2:
 https://www.tensorflow.org/install/pip
 
