@@ -6,10 +6,16 @@ It is worth mentioning that the original GEE algorithm is already faster than ot
 GEE repo:
 https://github.com/cshen6/GraphEmd
 
-## Installation
-```pip install -r requirements.txt```
-
 ## Usage
+Running GEE_sparse or GEE_edglst do not need tensorflow, nor sklearn.
+
+Running GEE with demonstrated LDA needs sklearn.
+
+Running GEE with demonstrated Neural Networks needs tensorflow.
+
+### Runing embedding algorithm alone
+```pip install -r requirements_GEE.txt```
+
 * run GEE_sparse 
 
   ```python3 run_GEE.py sparse```
@@ -21,6 +27,21 @@ https://github.com/cshen6/GraphEmd
 * compare GEE_sparse and GEE_edge_list 
 
   ```python3 run_GEE.py compare```
+
+### Runing embedding with classifier
+```pip install -r requirements_classifiers.txt```
+
+NOTE: 
+For windows, do not pip install tensorflow directly, follow the official document to install with WSL2:
+https://www.tensorflow.org/install/pip
+
+If encountering error: Unable to find libdevice directory (${CUDA_DIR}/nvvm/libdevice)
+Can downgrade the tensorflow to 2.10.*
+Or, can try find solutions from these links: 
+https://discuss.tensorflow.org/t/cant-find-libdevice-directory-cuda-dir-nvvm-libdevice/11896
+https://github.com/tensorflow/tensorflow/issues/58681
+https://github.com/aws/sagemaker-distribution/issues/15
+
 
 * run GEE_sparse with LDA 
 
