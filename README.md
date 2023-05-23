@@ -41,9 +41,9 @@ If encountering error: Unable to find libdevice directory (${CUDA_DIR}/nvvm/libd
 Can downgrade the tensorflow to 2.10.*
 
 Or, can try find solutions from these links: 
-* https://discuss.tensorflow.org/t/cant-find-libdevice-directory-cuda-dir-nvvm-libdevice/11896
-* https://github.com/tensorflow/tensorflow/issues/58681
-* https://github.com/aws/sagemaker-distribution/issues/15
+https://discuss.tensorflow.org/t/cant-find-libdevice-directory-cuda-dir-nvvm-libdevice/11896<br />
+https://github.com/tensorflow/tensorflow/issues/58681<br />
+https://github.com/aws/sagemaker-distribution/issues/15<br />
 
 
 * run GEE_sparse with LDA 
