@@ -40,7 +40,7 @@ If encountering error: Unable to find libdevice directory (${CUDA_DIR}/nvvm/libd
 
 Can downgrade the tensorflow to 2.10.*
 
-Or, can try find solutions from these links: 
+Or, can try find solutions from these links: <br />
 https://discuss.tensorflow.org/t/cant-find-libdevice-directory-cuda-dir-nvvm-libdevice/11896<br />
 https://github.com/tensorflow/tensorflow/issues/58681<br />
 https://github.com/aws/sagemaker-distribution/issues/15<br />
