@@ -41,7 +41,7 @@ https://discuss.tensorflow.org/t/cant-find-libdevice-directory-cuda-dir-nvvm-lib
 https://github.com/tensorflow/tensorflow/issues/58681<br />
 https://github.com/aws/sagemaker-distribution/issues/15<br />
 
-For mac users, install tensorflow and sklearn together use the line below.
+For mac users, install tensorflow and sklearn together use the line below.<br />
 ```pip install -r requirements_classifiers.txt```
 
 * run GEE_sparse with LDA 
