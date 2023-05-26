@@ -43,15 +43,16 @@ https://github.com/aws/sagemaker-distribution/issues/15<br />
 
 If you prefer to run with CPU only
 Either add these below in the script:
-'''
+```python
 import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'  # or any {'0', '1', '2'}
 import tensorflow as tf
-'''
+```
 
 Or using the command line:
+```
 TF_CPP_MIN_LOG_LEVEL=2 python3 run_classifier.py NN
-'''
+```
 
 For mac users, install tensorflow and sklearn together use the line below.<br />
 ```pip install -r requirements_classifiers.txt```
